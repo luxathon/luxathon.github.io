@@ -3577,6 +3577,9 @@ footer .row {
         right: 0;
         bottom: 0;
     }
+    .register1{
+        padding-bottom:220px;
+    }
 }
 
 @media only screen and (max-width: 500px) {
@@ -3593,6 +3596,9 @@ footer .row {
     .footer-subscribe #mc-form label {
         text-align: center;
     }
+    .register1{
+        padding-bottom: 150px;
+    }
 }
 
 @media only screen and (max-width: 400px) {
@@ -3601,6 +3607,9 @@ footer .row {
     }
     .footer-main .right {
         padding-left: 0;
+    }
+    .register1{
+        padding-bottom: 200px;
     }
 }
 
