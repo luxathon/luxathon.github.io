@@ -2184,7 +2184,6 @@ html.no-csstransitions .home-content__main {
 
 @media only screen and (max-width: 400px) {
     .s-home {
-        
         min-height: 630px;
     }
     .home-content h1 {
@@ -3670,4 +3669,8 @@ footer .row {
   .columns {
     width: 100%;
   }
+}
+.terms li{
+    margin-top: .7em;
+    margin-bottom: .7em;
 }
