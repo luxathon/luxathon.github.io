@@ -1,521 +1,560 @@
-<!DOCTYPE html>
-<!--[if lt IE 9 ]><html class="no-js oldie" lang="en"> <![endif]-->
-<!--[if IE 9 ]><html class="no-js oldie ie9" lang="en"> <![endif]-->
-<!--[if (gte IE 9)|!(IE)]><!-->
-<html class="no-js" lang="en">
-<!--<![endif]-->
+<!doctype html>
+<html>
 
 <head>
-
-    <!--- basic page needs
-    ================================================== -->
-    <meta charset="utf-8">
-    <title>Luxathon</title>
-    <meta name="description" content="">
-    <meta name="author" content="">
-
-    <!-- mobile specific metas
-    ================================================== -->
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <!-- CSS
-    ================================================== -->
-    <link rel="stylesheet" href="css/base.css">
-    <link rel="stylesheet" href="css/vendor.css">
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/table.css">
-
-    <!-- script
-    ================================================== -->
-    <script src="js/modernizr.js"></script>
-    <script src="js/pace.min.js"></script>
-
-    <!-- favicons
-    ================================================== -->
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
-<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
     <style>
-* {
-  box-sizing: border-box;
-}
-
-/* Create three equal columns that floats next to each other */
-.column {
-  float: left;
-  width: 33.33%;
-  padding: 50px;
-  height: 300px;
-  padding-top: 50px;
-  padding-bottom: 50px; 
-  border-style: solid;
-  border-width: 20px;
-  border-color:white;
-  align-items:  center;
-  background-color:white;/* Should be removed. Only for demonstration */
-}
-
-/* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-@media screen and (max-width: 600px) {
-  .column {
-    width: 100%;
-  }
-}
-</style>
-
+        * {
+            font-family: 'Montserrat', sans-serif;
+        }
+    </style>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.1.1/flowbite.min.css" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.1.1/flowbite.min.js"></script>
 </head>
 
-<body id="top">
+<body class="">
+    <div id="home" class="" style="background-image: url('assets/bg.jpg'); background-repeat: no-repeat; background-size: cover; background-position: center;">
+        <div class="container mx-auto lg:pt-8 pt-4 pb-24">
+            <!-- Navigation bar -->
+            <div class="">
+                <!-- <div class="logo">
+                    <img src="assets/logo.png" alt="" class="w-10">
+                </div>
+                <div class="links text-white flex italic font-semibold text-sm">
+                    <a href="#home"><span
+                            class="ml-4 hover:underline hover:underline-offset-8 hover:decoration-green-400 hover:decoration-4">Home</span></a>
+                    <a href="#about"><span
+                            class="ml-4 hover:underline hover:underline-offset-8 hover:decoration-green-400 hover:decoration-4">About</span></a>
+                    <a href="#register"><span
+                        class="ml-4 hover:underline hover:underline-offset-8 hover:decoration-green-400 hover:decoration-4">Register</span></a>
+                    <a href="#terms"><span
+                        class="ml-4 hover:underline hover:underline-offset-8 hover:decoration-green-400 hover:decoration-4">Terms</span></a>
+                    <a href="#contact"><span
+                        class="ml-4 hover:underline hover:underline-offset-8 hover:decoration-green-400 hover:decoration-4">Contact</span></a>
+                </div> -->
 
-    <!-- header
-    ================================================== -->
-    <header class="s-header">
-
-        <div class="header-logo">
-            <a class="site-logo" href="index.html">
-                <img src="images/logo1.png" alt="Homepage">
-            </a>
-        </div>
-
-        <nav class="header-nav">
-
-            <a href="#0" class="header-nav__close" title="close"><span>Close</span></a>
-
-            <div class="header-nav__content">
-                <h3>Navigation</h3>
-                
-                <ul class="header-nav__list">
-                    <li class="current"><a class="smoothscroll"  href="#home" title="home">Home</a></li>
-                    <li><a class="smoothscroll"  href="#about" title="about">About</a></li>
-                    <li><a class="smoothscroll"  href="#hello" title="services">Register</a></li>
-                    <li><a href="./terms.html">Terms & Conditions</a></li>
-                    <li><a class="smoothscroll"  href="#contact" title="contact">Contact</a></li>
-                </ul>
-    
-                
-                <ul class="header-nav__social">
-                    <li>
-                        <a href="https://www.facebook.com/luxathon"><i class="fa fa-facebook"></i></a>
-                    </li>
-                    <li>
-                        <a href="https://www.twitter.com/cek_sb"><i class="fa fa-twitter"></i></a>
-                    </li>
-                    <li>
-                        <a href="https://www.instagram.com/ieee_sb_cek/"><i class="fa fa-instagram"></i></a>
-                    </li>
-                </ul>
-
-            </div> <!-- end header-nav__content -->
-
-        </nav>  <!-- end header-nav -->
-
-        <a class="header-menu-toggle" href="#0">
-            <span class="header-menu-text" style="color: black;">Menu</span>
-            <span class="header-menu-icon"></span>
-        </a>
-
-    </header> <!-- end s-header -->
-
-
-    <!-- home
-    ================================================== -->
-    <section id="home" class="s-home target-section" data-parallax="scroll" data-image-src="images/hero-bgg3.png" data-natural-width=3000 data-natural-height=2000 data-position-y=center>
- <div class=""></div>
-        <div class=""></div>
-
-        <div class="home-content">
-
-            <div class="row home-content__main">
-
-            
-
-                <h1 style="color: white; font-family: montserrat-semibold, sans-serif;">
-                    LUXATHON 3.0
-                    
-                </h1>
-                   <h3 style="color: white;">DESIGN * DEVELOP * ILLUMINATE</h3>
-                   <h4 style="color: white;">17th, 18th, & 19th December 2021</h4>
-                <div class="home-content__buttons">
-                    <a  href="#hello" class=" btn btn--stroke">
-                        Register Now
+                <nav class="px-4 py-4 flex justify-between items-center">
+                    <a class="text-3xl font-bold leading-none p-3" href="#">
+                        <img src="assets/logo.png" alt="" class="w-12 hover:opacity-70">
                     </a>
-                    
-                </div>
-
-            </div>
-
-
-
-        </div> <!-- end home-content -->
-
- <ul class="home-social">
-            <li>
-                <a href="https://www.facebook.com/luxathon"><i class="fa fa-facebook" aria-hidden="true"></i><span>Facebook</span></a>
-            </li>
-            <li>
-                <a href="https://www.twitter.com/cek_sb"><i class="fa fa-twitter" aria-hidden="true"></i><span>Twiiter</span></a>
-            </li>
-            <li>
-                <a href="https://www.instagram.com/ieee_sb_cek/"><i class="fa fa-instagram" aria-hidden="true"></i><span>Instagram</span></a>
-            </li>
-           
-        </ul> 
-
-    </section> <!-- end s-home -->
-
-
-<section id='about' class="s-about">
-<script>
-   var deadline = new Date("Dec 17, 2021 10:00:00").getTime();
-var x = setInterval(function() {
-var now = new Date().getTime();
-var t = deadline - now;
-var days = Math.floor(t / (1000 * 60 * 60 * 24));
-var hours = Math.floor((t%(1000 * 60 * 60 * 24))/(1000 * 60 * 60));
-var minutes = Math.floor((t % (1000 * 60 * 60)) / (1000 * 60));
-var seconds = Math.floor((t % (1000 * 60)) / 1000);
-document.getElementById("daye").innerHTML = days;
-document.getElementById("houre").innerHTML = hours;
-document.getElementById("mine").innerHTML = minutes;
-document.getElementById("sece").innerHTML = seconds;
-
-
-    if (t < 0) {
-        clearInterval(x);
-        document.getElementById("daye").innerHTML = 0;
-        document.getElementById("houre").innerHTML = 0;
-        document.getElementById("mine").innerHTML = 0;
-        document.getElementById("sece").innerHTML = 0;
-
-    }
-}, 1000);
-</script>
-        <div class="row section-header has-bottom-sep" data-aos="fade-up">
-            <div class="col-full">
-                
-                <h1 class="display-1 display-1--light" style="color:black;">LUXATHON 3.0</h1>
-            </div>
-        </div> <!-- end section-header -->
-
-        <div class="row about-desc" data-aos="fade-up">
-            <div class="col-full">
-                <p>
-                Luxathon is world's first 24-Hour university level electrical illumination electrical hackathon conducted by college of Engineering Karunagappally within 24 hours the participants has to design and develop an illumination system according to the specified theme and requirements by using given equipment in the most efficient way and according to standards
-                </p>
-            </div>
-        </div> <!-- end about-desc -->
-
-        <div class="row about-stats stats block-1-4 block-m-1-2 block-mob-full" data-aos="fade-up">
-                
-            <div class="col-block stats__col ">
-                <div id="daye" style="font-size: 50px;"></div>
-                <h5 style="color:black;">Days</h5>
-            </div>
-            <div class="col-block stats__col">
-                <div id="houre" style="font-size: 50px;"></div>
-                <h5 style="color:black;">Hours</h5>
-            </div>
-            <div class="col-block stats__col">
-                <div id="mine" style="font-size: 50px;"></div>
-                <h5 style="color:black;">Minutes</h5>
-            </div>
-            <div class="col-block stats__col">
-                <div id="sece" style="font-size: 50px;"></div>
-                <h5 style="color:black;">Seconds</h5> 
-            </div>
-
-        </div> <!-- end about-stats -->
-
-        <div class="about__line"></div>
-
-    </section> <!-- end s-about -->
-    <!-- services
-    ================================================== -->
-    <section  class="s-services">
-
-        <div class="row section-header has-bottom-sep" data-aos="fade-up">
-            <div class="col-full">
-                <h1 class="display-2" style="color:white;">What to do?</h1>
-            </div>
-        </div> <!-- end section-header -->
-
-        <div class="row services-list block-1-2 block-tab-full">
-
-            <div class="col-block service-item" data-aos="fade-up">
-                <div class="service-icon">
-                    <i class="icon-users"></i>
-                </div>
-                <div class="service-text">
-                    <h3 class="h2">Register</h3>
-                    <p>Register as a team of 4-5 members.Work together as team.Win as team
-                    </p>
+                    <div class="lg:hidden">
+                        <button class="navbar-burger flex items-center text-white p-3">
+                            <svg class="block h-6 w-6 fill-current" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                <title>Mobile menu</title>
+                                <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="links text-white lg:flex italic font-semibold text-sm hidden">
+                        <a href="#home"><span
+                                class="ml-6 hover:underline hover:underline-offset-8 hover:decoration-green-400 hover:decoration-4">Home</span></a>
+                        <a href="#about"><span
+                                class="ml-6 hover:underline hover:underline-offset-8 hover:decoration-green-400 hover:decoration-4">About</span></a>
+                        <a href="#register"><span
+                            class="ml-6 hover:underline hover:underline-offset-8 hover:decoration-green-400 hover:decoration-4">Register</span></a>
+                        <a href="#terms"><span
+                            class="ml-6 hover:underline hover:underline-offset-8 hover:decoration-green-400 hover:decoration-4">Terms</span></a>
+                        <a href="#contact"><span
+                            class="ml-6 hover:underline hover:underline-offset-8 hover:decoration-green-400 hover:decoration-4">Contact</span></a>
+                    </div>
+                </nav>
+                <div class="navbar-menu relative z-50 hidden">
+                    <div class="navbar-backdrop fixed inset-0 bg-gray-800 opacity-25"></div>
+                    <nav class="fixed top-0 right-0 bottom-0 flex flex-col w-5/6 max-w-sm py-6 px-6 bg-gray-800 border-r overflow-y-auto">
+                        <div class="flex justify-end mb-8">
+                            <button class="navbar-close mt-8">
+                                <svg class="h-6 w-6 text-white cursor-pointer hover:text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                                </svg>
+                            </button>
+                        </div>
+                        <div>
+                            <ul>
+                                <li class="mb-1 navbar-close">
+                                    <a class="block p-4 text-xl font-bold italic text-gray-400 hover:bg-blue-50 hover:text-green-500 rounded" href="#">Home</a>
+                                </li>
+                                <li class="mb-1 navbar-close">
+                                    <a class="block p-4 text-xl font-bold italic text-gray-400 hover:bg-blue-50 hover:text-green-500 rounded" href="#about">About</a>
+                                </li>
+                                <li class="mb-1 navbar-close">
+                                    <a class="block p-4 text-xl font-bold italic text-gray-400 hover:bg-blue-50 hover:text-green-500 rounded" href="#register">Register</a>
+                                </li>
+                                <li class="mb-1 navbar-close">
+                                    <a class="block p-4 text-xl font-bold italic text-gray-400 hover:bg-blue-50 hover:text-green-500 rounded" href="#terms">Terms</a>
+                                </li>
+                                <li class="mb-1 navbar-close">
+                                    <a class="block p-4 text-xl font-bold italic text-gray-400 hover:bg-blue-50 hover:text-green-500 rounded" href="#contact">Contact</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
                 </div>
             </div>
 
-            <div class="col-block service-item" data-aos="fade-up">
-                <div class="service-icon">
-                    <i class="icon-terminal"></i>
+            <!-- Header -->
+            <div class="header pt-20 text-center">
+                <div class="text-white italic lg:mt-32 mt-16 px-12 lg:px-0">
+                    <p class="hidden lg:block text-8xl font-black">Luxathon 4.0</p>
+                    <p class="lg:hidden text-6xl font-black">Luxathon 4.0</p>
+                    <p class="lg:text-xl text-lg font-semibold mt-4">24 Hour National Level Illumination Hackathon</p>
+                    <div class="mt-16">
+                        <a href="#register"><span
+                            class="px-4 py-2 rounded-md bg-green-500 text-3xl font-black hover:bg-yellow-500 text-black cursor-pointer">Register
+                            Now</span></a>
+                    </div>
+                    <p class="text-xl mt-12">9-11 December, 2023</p>
+                    <p class="lg:text-2xl text-md mt-2 font-bold">IEEE Student Branch <br>College of Engineeirng Karunagappally</p>
+                    <div class="social mt-8 flex justify-center">
+                        <img src="assets/linkedin.png" alt="" class="w-8 mx-2">
+                        <img src="assets/instagram.png" alt="" class="w-8 mx-2">
+                        <img src="assets/twitter.png" alt="" class="w-8 mx-2">
+                        <img src="assets/facebook.png" alt="" class="w-8 mx-2">
+                    </div>
                 </div>
-                <div class="service-text">
-                    <h3 class="h2">Prepare</h3>
-                    <p>All necessary equipments will be provided to the participants except arduino or raspberry pi board that should be brought by each team or can be hired from the venue. Also each team should carry one laptop.</p>
+                <div class="flex justify-center lg:mt-28 mt-12">
+                    <!-- <img src="assets/arrow-down-sign-to-navigate.png" alt="" class="mx-2 w-8 animate-bounce"> -->
+                    <span class="mx-2 w-8 animate-bounce text-2xl text-green-500">▼</span>
                 </div>
-            </div>
-
-            <div class="col-block service-item" data-aos="fade-up">
-                <div class="service-icon">
-                    <i class="icon-wrench"></i>
-                </div>  
-                <div class="service-text">
-                    <h3 class="h2">Participate</h3>
-                    <p>A mentoring session explaining the bare minimum concepts will be provided by experts so that anyone with basic electrical knowledge can participate in the hackathon.
-                    </p>
-                </div>
-            </div>
-
-            <div class="col-block service-item" data-aos="fade-up">
-                <div class="service-icon">
-                    <i class="icon-light-bulb"></i>
-                </div>
-                <div class="service-text">
-                    <h3 class="h2">Compete</h3>
-                    <p>The competition will be judged and mentored by a panel of experts from electrical academic and industrial fileds.
-                    </p>
-                </div>
-            </div>
-
-        </div> <!-- end services-list -->
-    </section> <!-- end s-services -->
-
-
-
-
-
-
-<!-- <section id='services' class="s-styles" style="color: white; padding-top: 25px;"  data-aos="fade-up">
-        
-        <div class="row narrow section-intro add-bottom text-center" style="color: white;">
-
-            <div class="col-twelve tab-full" style="color: white;">
-
-                <h1 class="display-2" style="color: white;"><em>Exciting Prizes Awaits you</em></h1>
-
-             <div class=" about text-center stats block-1-5 block-m-1-3 block-mob-full" style="text-align: center;" data-aos="fade-up">
-            <center>
-                <br>
-                <br>
-            <div class="">
-                <div class="stats__count" style="font-size: 30px; color: white; text-decoration: wavy;">12000</div><p>RS</p>
-                <h5 style="color: white;"><em>First Prize</em></h5>
-            </div>
-            <div class="">
-                <div class="stats__count" style="font-size: 30px; color: white;">5000</div><p>RS</p>
-                <h5 style="color: white;"><em>Second Prize</em></h5>
-            </div>
-            <div class="">
-                <div class="stats__count" style="font-size: 30px; color: white;">3000</div><p>RS</p>
-                <h5 style="color: white;"><em>Third Prize</em></h5> 
-            </div>
-        </center>
-        </div> <!-- end about-stats -->
-
-
-     <!--            <p class="lead" style="color: white;" data-aos="fade-up">
-                <h3  style="color: white;">Grab your seats at this technical extravaganza</h3>
-                <h5  style="color: white;">Fee details per head given below.</h5>
-                 <dd style="color: white;">
-                     <dt style="color: white;">IEEE PES Member</dt>
-                     <dt style="color: white;">₹650</dt>
-                     <dt style="color: white;">IEEE Member</dt>
-                     <dt style="color: white;">₹750</dt>
-                     <dt style="color: white;">Non IEEE Member</dt>
-                     <dt style="color: white;">₹950</dt>
-                </dd>
-                </p>
-
-            </div>
-            <a class="btn btn--stroke" href="https://www.yepdesk.com/luxathon">Register Now</a>
-        </div>
-</section> --> 
-<section id="hello">
-
-<div class="row register1" style="padding-bottom:100px; ">
-   <center> 
-       <h1>Choose your tickets</h1>
-       <p style="color: black;">(Read the <a href="./terms.html">Terms & Conditions</a> carefully before buying your tickets)</p>
-   </center>
-  <div class="column" style="margin-bottom:80px; " >
-    <center><h2>IEEE PES/SPS/PHO Member</h2></center>
-    <center><p>Rs. 1200</p></center>
-   <center><a href="https://www.townscript.com/e/luxathon-30-200202"><button style="background-color: limegreen; color: white; border-color: limegreen; border-width: 1px";>Register</button></a></center>
-  </div>
-  <div class="column" style="margin-bottom:40px; ">
-   <center> <h2>IEEE<br> Member</h2></center>
-    <center><p>Rs. 1400</p></center>
-    <br>
-    <center><a href="https://www.townscript.com/e/luxathon-30-200202"><button style="background-color: limegreen; color: white; border-color:limegreen; border-width: 1px";>Register</button></a></center>
-  </div>
-  <div class="column" style="padding-bottom:40px; ">
-  <center>  <h2>Non IEEE Member</h2></center>
-  <center>  <p>Rs. 1600</p></center>
-  <br>
-    <center><a href="https://www.townscript.com/e/luxathon-30-200202"><button style="background-color: limegreen; color: white; border-color: limegreen; border-width: 1px;">Register</button></a></center>
-  </div>
-</div>
-<div class="row">
-    <center><a href="./terms.html"><button style="background-color: white; color: red; border-color: limegreen; border-width: 1px";>Read Terms & Conditions</button></a></center>
-</div>
-
-</section>
- <section id="contact" class="s-contact">
-
-        <div class="overlay"></div>
-        <div class=""></div>
-
-        <div class="row section-header" data-aos="fade-up">
-            <div class="col-full">
-               <h3 class="display-2 display-2--light" style="color: white;">Contact US</h3>
             </div>
         </div>
+    </div>
 
-        <div class="row contact-content" data-aos="fade-up">
-            
-            <div class="contact-primary">
-
-                <h3 class="h6">Find US!</h3>
-
-                <div class="video-container">
-                <div class="mapouter"><div class="gmap_canvas"><iframe width="600" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=college%20of%20engineering%20karunagappally&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe></div><style>.mapouter{text-align:right;height:500px;width:600px;}.gmap_canvas {overflow:hidden;background:none!important;height:500px;width:600px;}</style></div>
-                </div>
-
-
-                <!-- contact-warning -->
-              
-
-            </div> <!-- end contact-primary -->
-
-            <div class="contact-secondary">
-                <div class="contact-info">
-
-                    <h3 class="h6 hide-on-fullwidth" style="color:white;">Contact Info</h3>
-
-                    <div class="cinfo">
-                        <h5 style="color:white;">Where to Find Us</h5>
-                        <p>
-                            IEEE SB CEK<br>
-                            College of Engineering Karunagappally<br>
-                            Thodiyoor P O Kollam
-                        </p>
+    <div class="bg-gray-900">
+        <div class="container mx-auto lg:py-24 py-12">
+            <!-- organizers -->
+            <div class="lg:mx-32 mx-8">
+                <div class="grid lg:grid-cols-4 lg:gap-4 grid-cols-2 gap-4 items-center">
+                    <div class="flex justify-center">
+                        <img src="assets/logo2.png" alt="" class="h-32">
                     </div>
-
-                    <div class="cinfo">
-                        <h5 style="color:white;">Email Us At</h5>
-                        <p>
-                            ieeesbcek2000@gmail.com<br>
-                        </p>
+                    <div class="flex justify-center">
+                        <img src="assets/logo1.png" alt="" class="h-24">
                     </div>
-
-                    <div class="cinfo">
-                        <h5 style="color:white;">Call Us At</h5>
-                        <p>
-                            Cliffin Cletus: <font style="font-size: 14px;">+91 81398 61033</font><br>
-                            Alister Clietus: +91 90745 73015<br>
-                        </p>
+                    <!-- <div class="flex justify-center">
+                        <img src="assets/logo3.png" alt="" class="h-24">
+                    </div> -->
+                    <div class="flex justify-center">
+                        <img src="assets/logo4.png" alt="" class="h-24">
                     </div>
-
-                    <ul class="contact-social">
-                        <li>
-                            <a href="https://www.facebook.com/luxathon"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-                        </li>
-                        <li>
-                            <a href="https://www.twitter.com/cek_sb"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-                        </li>
-                        <li>
-                            <a href="https://www.instagram.com/ieee_sb_cek/"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-                        </li>
-                    </ul> <!-- end contact-social -->
-
-                </div> <!-- end contact-info -->
-            </div> <!-- end contact-secondary -->
-
-        </div> <!-- end contact-content -->
-
-    </section> <!-- end s-contact -->
-    <!-- footer
-    ================================================== -->
-    <footer>
-
-       <center>Built with <i class="icon-heart" style="color: white;"></i> IEEE SB CEK</center>
-       <center>&copy; IEEE SB CEK</center>
-    </footer> <!-- end footer -->
-
-
-    <!-- photoswipe background
-    ================================================== -->
-    <div aria-hidden="true" class="pswp" role="dialog" tabindex="-1">
-
-        <div class="pswp__bg"></div>
-        <div class="pswp__scroll-wrap">
-
-            <div class="pswp__container">
-                <div class="pswp__item"></div>
-                <div class="pswp__item"></div>
-                <div class="pswp__item"></div>
+                    <div class="flex justify-center">
+                        <img src="assets/logo5.png" alt="" class="h-24">
+                    </div>
+                  </div>
             </div>
+        </div>
+    </div>
 
-            <div class="pswp__ui pswp__ui--hidden">
-                <div class="pswp__top-bar">
-                    <div class="pswp__counter"></div><button class="pswp__button pswp__button--close" title="Close (Esc)"></button> <button class="pswp__button pswp__button--share" title=
-                    "Share"></button> <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button> <button class="pswp__button pswp__button--zoom" title=
-                    "Zoom in/out"></button>
-                    <div class="pswp__preloader">
-                        <div class="pswp__preloader__icn">
-                            <div class="pswp__preloader__cut">
-                                <div class="pswp__preloader__donut"></div>
+    <div id="about" class="bg-black">
+        <div class="container mx-auto lg:py-32 py-16">
+            <!-- About -->
+            <div class="about">
+                <div class="w-full text-center mb-16">
+                    <p class="text-6xl italic text-white font-black">About</p>
+                </div>
+                <div class="lg:mx-64 mx-8">
+                    <div id="animation-carousel" class="relative w-full mb-8 rounded-lg" data-carousel="static">
+                        <!-- Carousel wrapper -->
+                        <div class="relative h-56 overflow-hidden rounded-lg md:h-96">
+                            <!-- Item 1 -->
+                            <div class="hidden duration-200 ease-linear" data-carousel-item>
+                                <img src="assets/carasoul/1.JPG"
+                                    class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                                    alt="...">
                             </div>
+                            <!-- Item 2 -->
+                            <div class="hidden duration-200 ease-linear" data-carousel-item>
+                                <img src="assets/carasoul/2.JPG"
+                                    class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                                    alt="...">
+                            </div>
+                            <!-- Item 3 -->
+                            <div class="hidden duration-200 ease-linear" data-carousel-item="active">
+                                <img src="assets/carasoul/3.JPG"
+                                    class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                                    alt="...">
+                            </div>
+                            <!-- Item 4 -->
+                            <div class="hidden duration-200 ease-linear" data-carousel-item>
+                                <img src="assets/carasoul/4.JPG"
+                                    class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                                    alt="...">
+                            </div>
+                            <!-- Item 5 -->
+                            <div class="hidden duration-200 ease-linear" data-carousel-item>
+                                <img src="assets/carasoul/5.JPG"
+                                    class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                                    alt="...">
+                            </div>
+                            <!-- Item 6 -->
+                            <div class="hidden duration-200 ease-linear" data-carousel-item>
+                                <img src="assets/carasoul/6.JPG"
+                                    class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                                    alt="...">
+                            </div>
+                            <!-- Item 7 -->
+                            <div class="hidden duration-200 ease-linear" data-carousel-item="active">
+                                <img src="assets/carasoul/7.JPG"
+                                    class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                                    alt="...">
+                            </div>
+                            <!-- Item 8 -->
+                            <div class="hidden duration-200 ease-linear" data-carousel-item>
+                                <img src="assets/carasoul/8.JPG"
+                                    class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                                    alt="...">
+                            </div>
+                        </div>
+                        <!-- Slider controls -->
+                        <button type="button"
+                            class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+                            data-carousel-prev>
+                            <span
+                                class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                                <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true"
+                                    xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                        stroke-width="2" d="M5 1 1 5l4 4" />
+                                </svg>
+                                <span class="sr-only">Previous</span>
+                            </span>
+                        </button>
+                        <button type="button"
+                            class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+                            data-carousel-next>
+                            <span
+                                class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                                <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true"
+                                    xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                        stroke-width="2" d="m1 9 4-4-4-4" />
+                                </svg>
+                                <span class="sr-only">Next</span>
+                            </span>
+                        </button>
+                    </div>
+
+                    <div class="">
+                        <p class="text-white italic lg:text-md text-sm text-justify">
+                            Luxathon is a dynamic 24-hour illumination hackathon that challenges participants to fuse
+                            creativity and
+                            technology in crafting transformative lighting experiences. Bringing together individuals
+                            with diverse
+                            skills, from design and engineering to programming, Luxathon explores the intersection of
+                            traditional
+                            and cutting-edge lighting methods. Participants work collaboratively to conceptualize and
+                            implement
+                            projects that showcase the innovative potential of light, utilizing technologies like LED,
+                            smart
+                            lighting, and interactive installations. The event culminates in a showcase where projects
+                            are judged
+                            based on creativity, technical innovation, and overall impact. Luxathon not only fosters
+                            community and
+                            cross-disciplinary collaboration but also serves as a platform for networking and skill
+                            development,
+                            propelling the field of illumination design forward. As a unique blend of rapid prototyping
+                            and
+                            aesthetic considerations, Luxathon inspires participants to redefine the possibilities of
+                            light in
+                            shaping our surroundings.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="register" class="bg-gray-900">
+        <div class="container lg:mx-auto lg:py-24 py-16">
+            <!-- Register -->
+            <div class="register w-full">
+                <div class="w-full text-center mb-16">
+                    <p class="lg:text-6xl text-4xl italic text-white font-black">Join the legacy</p>
+                    <p class="lg:text-4xl text-2xl italic text-white font-black">Register today</p>
+                </div>
+                <div class="mt-16 text-center mb-8">
+                    <p class="mb-4"><span class="py-2 px-4 rounded-lg bg-yellow-500 font-bold">Early bird pricing</span></p>
+                    <p class="lg:text-2xl text-md text-md italic text-white">Valid till <span class="font-bold">20th, November 2023</span></p>
+                </div>
+                <div class="grid lg:grid-cols-4 lg:gap-2 md:grid-cols-3 md:gap-2 grid-cols-2 gap-4 lg:flex lg:justify-center items-center h-fit mx-4">
+                    <div class="card lg:w-fit sm:w-full rounded-xl bg-black lg:p-8 p-4 py-8 lg:m-4 text-center text-white h-full flex flex-col justify-between">
+                        <div>
+                            <p class="italic font-bold text-xl">IEEE PES Member</p>
+                            <p class="italic lg:text-md text-sm mt-6">Students with valid <br>IEEE PES membership</p>
+                        </div>
+                        <div>
+                            <p class="italic font-bold lg:text-4xl text-xl mt-16">
+                                <span class="py-2 px-4 rounded-md bg-green-500 text-black cursor-pointer hover:bg-yellow-500">Rs. 1100*</span>
+                            </p>
+                            <p class="lg:text-sm text-xs mt-2 italic">*per person price</p>
+                        </div>
+                    </div>
+                    <div class="card lg:w-fit sm:w-full rounded-xl bg-black lg:p-8 p-4 py-8 lg:m-4 text-center text-white h-full flex flex-col justify-between">
+                        <div>
+                            <p class="italic font-bold text-xl">IEEE PES Member</p>
+                            <p class="italic lg:text-md text-sm mt-6">Students with valid <br>IEEE PES membership</p>
+                        </div>
+                        <div>
+                            <p class="italic font-bold lg:text-4xl text-xl mt-16">
+                                <span class="py-2 px-4 rounded-md bg-green-500 text-black cursor-pointer hover:bg-yellow-500">Rs. 1100*</span>
+                            </p>
+                            <p class="lg:text-sm text-xs mt-2 italic">*per person price</p>
+                        </div>
+                    </div>
+                    <div class="card lg:w-fit sm:w-full rounded-xl bg-black lg:p-8 p-4 py-8 lg:m-4 text-center text-white h-full flex flex-col justify-between">
+                        <div>
+                            <p class="italic font-bold text-xl">IEEE PES Member</p>
+                            <p class="italic lg:text-md text-sm mt-6">Students with valid <br>IEEE PES membership</p>
+                        </div>
+                        <div>
+                            <p class="italic font-bold lg:text-4xl text-xl mt-16">
+                                <span class="py-2 px-4 rounded-md bg-green-500 text-black cursor-pointer hover:bg-yellow-500">Rs. 1100*</span>
+                            </p>
+                            <p class="lg:text-sm text-xs mt-2 italic">*per person price</p>
+                        </div>
+                    </div>
+                    <div class="card lg:w-fit sm:w-full rounded-xl bg-black lg:p-8 p-4 py-8 lg:m-4 text-center text-white h-full flex flex-col justify-between">
+                        <div>
+                            <p class="italic font-bold text-xl">IEEE PES Member</p>
+                            <p class="italic lg:text-md text-sm mt-6">Students with valid <br>IEEE PES membership</p>
+                        </div>
+                        <div>
+                            <p class="italic font-bold lg:text-4xl text-xl mt-16">
+                                <span class="py-2 px-4 rounded-md bg-green-500 text-black cursor-pointer hover:bg-yellow-500">Rs. 1100*</span>
+                            </p>
+                            <p class="lg:text-sm text-xs mt-2 italic">*per person price</p>
                         </div>
                     </div>
                 </div>
-                <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
-                    <div class="pswp__share-tooltip"></div>
-                </div><button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)"></button> <button class="pswp__button pswp__button--arrow--right" title=
-                "Next (arrow right)"></button>
-                <div class="pswp__caption">
-                    <div class="pswp__caption__center"></div>
+
+                <div class="mt-16 text-center mb-8">
+                    <p class="text-2xl italic text-white">Pricing after <span class="font-bold">20th, November
+                            2023</span></p>
+                </div>
+                <div class="grid lg:grid-cols-4 lg:gap-2 grid-cols-2 gap-4 lg:flex lg:justify-center items-center h-fit mx-4">
+                    <div class="card lg:w-fit sm:w-full rounded-xl bg-gray-600 lg:p-8 p-4 py-8 lg:m-4 text-center text-white h-full flex flex-col justify-between">
+                        <div>
+                            <p class="italic font-bold text-xl">IEEE PES Member</p>
+                            <p class="italic lg:text-md text-sm mt-6">Students with valid <br>IEEE PES membership</p>
+                        </div>
+                        <div>
+                            <p class="italic font-bold lg:text-4xl text-xl mt-16">
+                                <span class="py-2 px-4 rounded-md bg-gray-200 text-black">Rs. 1100*</span>
+                            </p>
+                            <p class="lg:text-sm text-xs mt-2 italic">*per person price</p>
+                        </div>
+                    </div>
+                    <div class="card lg:w-fit sm:w-full rounded-xl bg-gray-600 lg:p-8 p-4 py-8 lg:m-4 text-center text-white h-full flex flex-col justify-between">
+                        <div>
+                            <p class="italic font-bold text-xl">IEEE PES Member</p>
+                            <p class="italic lg:text-md text-sm mt-6">Students with valid <br>IEEE PES membership</p>
+                        </div>
+                        <div>
+                            <p class="italic font-bold lg:text-4xl text-xl mt-16">
+                                <span class="py-2 px-4 rounded-md bg-gray-200 text-black">Rs. 1100*</span>
+                            </p>
+                            <p class="lg:text-sm text-xs mt-2 italic">*per person price</p>
+                        </div>
+                    </div>
+                    <div class="card lg:w-fit sm:w-full rounded-xl bg-gray-600 lg:p-8 p-4 py-8 lg:m-4 text-center text-white h-full flex flex-col justify-between">
+                        <div>
+                            <p class="italic font-bold text-xl">IEEE PES Member</p>
+                            <p class="italic lg:text-md text-sm mt-6">Students with valid <br>IEEE PES membership</p>
+                        </div>
+                        <div>
+                            <p class="italic font-bold lg:text-4xl text-xl mt-16">
+                                <span class="py-2 px-4 rounded-md bg-gray-200 text-black">Rs. 1100*</span>
+                            </p>
+                            <p class="lg:text-sm text-xs mt-2 italic">*per person price</p>
+                        </div>
+                    </div>
+                    <div class="card lg:w-fit sm:w-full rounded-xl bg-gray-600 lg:p-8 p-4 py-8 lg:m-4 text-center text-white h-full flex flex-col justify-between">
+                        <div>
+                            <p class="italic font-bold text-xl">IEEE PES Member</p>
+                            <p class="italic lg:text-md text-sm mt-6">Students with valid <br>IEEE PES membership</p>
+                        </div>
+                        <div>
+                            <p class="italic font-bold lg:text-4xl text-xl mt-16">
+                                <span class="py-2 px-4 rounded-md bg-gray-200 text-black">Rs. 1100*</span>
+                            </p>
+                            <p class="lg:text-sm text-xs mt-2 italic">*per person price</p>
+                        </div>
+                    </div>
                 </div>
             </div>
-
         </div>
+    </div>
 
-    </div> <!-- end photoSwipe background -->
+    <div id="terms" class="bg-black">
+        <div class="container mx-auto lg:py-32 py-16">
+            <!-- Terms -->
+            <div class="terms lg:mx-0 mx-2">
+                <div class="w-full text-center mb-16">
+                    <p class="lg:text-6xl text-4xl italic text-white font-black">Terms and Conditions</p>
+                </div>
+                <div class="lg:mx-64 mx-8">
+                    <p class="text-white italic text-md text-justify h-full">
+                        Read the Terms & Conditions carefully before buying your tickets.
+                    </p>
+                    <ul class="text-white list-decimal italic mt-4 text-justify text-sm">
+                        <li>Participants should bring their college ID card/Government Approved ID Card to enter the
+                            premises.</li>
+                        <li>A soft copy of the IEEE membership card has to be shown at the registration desk. Non-IEEE
+                            members registered as IEEE members will be imposed with a fine of Rs. 500.</li>
+                        <li>Students registered as IEEE PES/SPS/PHO Members, should provide their PES/SPS/PHO Membership
+                            subscription while registering and should keep a soft copy to be shown at the registration
+                            desk.</li>
+                        <li>Your vehicle is not allowed inside the campus as well as no safeguarding of your vehicle
+                            will be provided by the authorities.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
 
+    <div id="contact" class="bg-gray-900">
+        <div class="container mx-auto lg:py-24 py-12">
+            <!-- Register -->
+            <div class="contact">
+                <div class="w-full text-center lg:mb-16 mb-8">
+                    <p class="text-6xl italic text-white font-black">Contact</p>
+                </div>
+                <div class="flex justify-center">
+                    <div class="card w-fit rounded-xl bg-black p-8 m-4 text-white lg:flex lg:justify-center">
+                        <div class="lg:m-8">
+                            <div style="text-decoration:none; overflow:hidden;max-width:100%;" class="rounded-xl lg:h-80 lg:w-80">
+                                <div id="g-mapdisplay" style="height:100%; width:100%;max-width:100%;"><iframe
+                                        style="height:100%;width:100%;border:0;" frameborder="0"
+                                        src="https://www.google.com/maps/embed/v1/place?q=college+of+engineering+karunagappally&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"></iframe>
+                                </div><a class="code-for-google-map" href="https://www.bootstrapskins.com/themes"
+                                    id="get-data-for-map"></a>
+                                <style>
+                                    #g-mapdisplay img.text-marker {
+                                        max-width: none !important;
+                                        background: none !important;
+                                    }
 
-    <!-- preloader
-    ================================================== -->
-    <div id="preloader">
-        <div id="loader">
-            <div class="line-scale-pulse-out">
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
+                                    img {
+                                        max-width: none
+                                    }
+                                </style>
+                            </div>
+                        </div>
+                        <div class="lg:m-8 lg:mt-8 mt-8 text-center">
+                            <p class="italic font-bold text-xl mb-4">Address</p>
+                            <p class="italic text-white mb-8">IEEE Student Branch, <br>College of Engineering Karunagappally, <br>Kollam, Kerala, 690523</p>
+                            <p class="italic font-bold text-xl mb-4">Phone</p>
+                            <p class="italic text-white mb-8">Sidhi: <a href="tel:+919500950011" class="hover:text-green-500">+91 9500950011</a> <br>Archa: <a href="tel:+919500950011" class="hover:text-green-500">+91 9500950011</a></p>
+                            <p class="italic font-bold text-xl mb-4">Email</p>
+                            <p class="italic text-white mb-8"><a href="mailto:ieeesbcek2000@gmail.com" class="hover:text-green-500">ieeesbcek2000@gmail.com</a></p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
 
 
-    <!-- Java Script
-    ================================================== -->
-    <script src="js/jquery-3.2.1.min.js"></script>
-    <script src="js/plugins.js"></script>
-    <script src="js/main.js"></script>
+    <div id="footer" class="bg-black">
+        <div class="container mx-auto py-10">
+            <!-- Terms -->
+            <div class="footer">
+                <div class="flex justify-center">
+                    <div>
+                        <div class="flex justify-center">
+                            <img src="assets/logo.png" alt="" class="w-10 mb-4">
+                        </div>
+                        <p class="text-white italic text-md  text-center">
+                            &copy; All rights reserved <br>
+                            Website developed by Team CEK💚
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <button id="to-top-button" onclick="goToTop()" title="Go To Top"
+        class="hidden fixed z-50 bottom-10 right-10 p-4 border-0 w-14 h-14 rounded-full shadow-md bg-green-400 hover:bg-green-500 text-white text-lg font-semibold transition-colors duration-300">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+            <path d="M12 4l8 8h-6v8h-4v-8H4l8-8z" />
+        </svg>
+        <span class="sr-only">Go to top</span>
+    </button>
+
+    <script>
+        // Get the 'to top' button element by ID
+        var toTopButton = document.getElementById("to-top-button");
+
+        // Check if the button exists
+        if (toTopButton) {
+
+            // On scroll event, toggle button visibility based on scroll position
+            window.onscroll = function() {
+                if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
+                    toTopButton.classList.remove("hidden");
+                } else {
+                    toTopButton.classList.add("hidden");
+                }
+            };
+
+            // Function to scroll to the top of the page smoothly
+            window.goToTop = function() {
+                window.scrollTo({
+                    top: 0,
+                    behavior: 'smooth'
+                });
+            };
+        }
+    </script>
+    <script>
+        // Burger menus
+        document.addEventListener('DOMContentLoaded', function() {
+            // open
+            const burger = document.querySelectorAll('.navbar-burger');
+            const menu = document.querySelectorAll('.navbar-menu');
+        
+            if (burger.length && menu.length) {
+                for (var i = 0; i < burger.length; i++) {
+                    burger[i].addEventListener('click', function() {
+                        for (var j = 0; j < menu.length; j++) {
+                            menu[j].classList.toggle('hidden');
+                        }
+                    });
+                }
+            }
+        
+            // close
+            const close = document.querySelectorAll('.navbar-close');
+            const backdrop = document.querySelectorAll('.navbar-backdrop');
+        
+            if (close.length) {
+                for (var i = 0; i < close.length; i++) {
+                    close[i].addEventListener('click', function() {
+                        for (var j = 0; j < menu.length; j++) {
+                            menu[j].classList.toggle('hidden');
+                        }
+                    });
+                }
+            }
+        
+            if (backdrop.length) {
+                for (var i = 0; i < backdrop.length; i++) {
+                    backdrop[i].addEventListener('click', function() {
+                        for (var j = 0; j < menu.length; j++) {
+                            menu[j].classList.toggle('hidden');
+                        }
+                    });
+                }
+            }
+        });
+        </script>
 
 </body>
 
