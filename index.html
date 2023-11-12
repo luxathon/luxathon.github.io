@@ -17,11 +17,17 @@
     </style>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.1.1/flowbite.min.css" rel="stylesheet" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.1.1/flowbite.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 </head>
 
 <body class="">
+
+    <div id="loading" class="fixed flex items-center justify-center w-full h-screen z-50 bg-black">
+        <div class="w-12 h-12 rounded-full animate-ping border-4 border-solid border-green-500 border-t-transparent"></div>
+    </div>
+
     <div id="home" class="" style="background-image: url('assets/bg.jpg'); background-repeat: no-repeat; background-size: cover; background-position: center;">
-        <div class="container mx-auto lg:pt-8 pt-4 pb-24">
+        <div class="container mx-auto lg:pt-8 pt-4 lg:pb-24 pb-12">
             <!-- Navigation bar -->
             <div class="">
                 <!-- <div class="logo">
@@ -100,17 +106,19 @@
 
             <!-- Header -->
             <div class="header pt-20 text-center">
-                <div class="text-white italic lg:mt-32 mt-16 px-12 lg:px-0">
+                <div class="text-white italic lg:mt-32 mt-8 px-12 lg:px-0">
                     <p class="hidden lg:block text-8xl font-black">Luxathon 4.0</p>
                     <p class="lg:hidden text-6xl font-black">Luxathon 4.0</p>
                     <p class="lg:text-xl text-lg font-semibold mt-4">24 Hour National Level Illumination Hackathon</p>
+                    <p class="lg:text-xl text-lg font-bold mt-4"><span class="py-2 px-4 rounded-lg bg-blue-500">Prizes worth Rs. 70000</span></p>
+                    
+                    <p class="text-xl mt-12">9-11 December, 2023</p>
+                    <p class="lg:text-2xl text-md mt-2 font-bold">IEEE Student Branch <br>College of Engineeirng Karunagappally</p>
                     <div class="mt-16">
                         <a href="#register"><span
                             class="px-4 py-2 rounded-md bg-green-500 text-3xl font-black hover:bg-yellow-500 text-black cursor-pointer">Register
                             Now</span></a>
                     </div>
-                    <p class="text-xl mt-12">9-11 December, 2023</p>
-                    <p class="lg:text-2xl text-md mt-2 font-bold">IEEE Student Branch <br>College of Engineeirng Karunagappally</p>
                     <div class="social mt-8 flex justify-center">
                         <img src="assets/linkedin.png" alt="" class="w-8 mx-2">
                         <img src="assets/instagram.png" alt="" class="w-8 mx-2">
@@ -144,7 +152,7 @@
                         <img src="assets/logo4.png" alt="" class="h-24">
                     </div>
                     <div class="flex justify-center">
-                        <img src="assets/logo5.png" alt="" class="h-24">
+                        <img src="assets/logo5.png" alt="" class="h-12">
                     </div>
                   </div>
             </div>
@@ -156,7 +164,7 @@
             <!-- About -->
             <div class="about">
                 <div class="w-full text-center mb-16">
-                    <p class="text-6xl italic text-white font-black">About</p>
+                    <p class="lg:text-6xl text-4xl italic text-white font-black">About</p>
                 </div>
                 <div class="lg:mx-64 mx-8">
                     <div id="animation-carousel" class="relative w-full mb-8 rounded-lg" data-carousel="static">
@@ -423,7 +431,7 @@
             <!-- Register -->
             <div class="contact">
                 <div class="w-full text-center lg:mb-16 mb-8">
-                    <p class="text-6xl italic text-white font-black">Contact</p>
+                    <p class="lg:text-6xl text-4xl italic text-white font-black">Contact</p>
                 </div>
                 <div class="flex justify-center">
                     <div class="card w-fit rounded-xl bg-black p-8 m-4 text-white lg:flex lg:justify-center">
@@ -470,7 +478,7 @@
                         <div class="flex justify-center">
                             <img src="assets/logo.png" alt="" class="w-10 mb-4">
                         </div>
-                        <p class="text-white italic text-md  text-center">
+                        <p class="text-white italic text-xs text-center">
                             &copy; All rights reserved <br>
                             Website developed by Team CEK💚
                         </p>
@@ -555,6 +563,11 @@
             }
         });
         </script>
+        <script>
+            $(window).on('load', function () {
+              $('#loading').hide();
+            }) 
+          </script>
 
 </body>
 
