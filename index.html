@@ -23,17 +23,18 @@
 <body class="">
 
     <div id="loading" class="fixed flex items-center justify-center w-full h-screen z-50 bg-black">
-        <div class="w-12 h-12 rounded-full animate-ping border-4 border-solid border-green-500 border-t-transparent"></div>
+        <div class="w-12 h-12 rounded-full animate-ping border-4 border-solid border-green-500 border-t-transparent">
+        </div>
     </div>
 
-    <div id="home" class="" style="background-image: url('assets/bg.jpg'); background-repeat: no-repeat; background-size: cover; background-position: center;">
+    <div id="home" style="background-image: url('assets/banner.jpg'); background-repeat: no-repeat; background-size: cover; background-position: center;">
         <div class="container mx-auto lg:pt-8 pt-4 lg:pb-24 pb-12">
             <!-- Navigation bar -->
             <div class="">
                 <!-- <div class="logo">
                     <img src="assets/logo.png" alt="" class="w-10">
                 </div>
-                <div class="links text-white flex italic font-semibold text-sm">
+                <div class="links text-white flex  font-semibold text-sm">
                     <a href="#home"><span
                             class="ml-4 hover:underline hover:underline-offset-8 hover:decoration-green-400 hover:decoration-4">Home</span></a>
                     <a href="#about"><span
@@ -52,51 +53,61 @@
                     </a>
                     <div class="lg:hidden">
                         <button class="navbar-burger flex items-center text-white p-3">
-                            <svg class="block h-6 w-6 fill-current" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                            <svg class="block h-6 w-6 fill-current" viewBox="0 0 20 20"
+                                xmlns="http://www.w3.org/2000/svg">
                                 <title>Mobile menu</title>
                                 <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
                             </svg>
                         </button>
                     </div>
-                    <div class="links text-white lg:flex italic font-semibold text-sm hidden">
+                    <div class="links text-white lg:flex  font-semibold text-sm hidden">
                         <a href="#home"><span
                                 class="ml-6 hover:underline hover:underline-offset-8 hover:decoration-green-400 hover:decoration-4">Home</span></a>
                         <a href="#about"><span
                                 class="ml-6 hover:underline hover:underline-offset-8 hover:decoration-green-400 hover:decoration-4">About</span></a>
                         <a href="#register"><span
-                            class="ml-6 hover:underline hover:underline-offset-8 hover:decoration-green-400 hover:decoration-4">Register</span></a>
+                                class="ml-6 hover:underline hover:underline-offset-8 hover:decoration-green-400 hover:decoration-4">Register</span></a>
                         <a href="#terms"><span
-                            class="ml-6 hover:underline hover:underline-offset-8 hover:decoration-green-400 hover:decoration-4">Terms</span></a>
+                                class="ml-6 hover:underline hover:underline-offset-8 hover:decoration-green-400 hover:decoration-4">Terms</span></a>
                         <a href="#contact"><span
-                            class="ml-6 hover:underline hover:underline-offset-8 hover:decoration-green-400 hover:decoration-4">Contact</span></a>
+                                class="ml-6 hover:underline hover:underline-offset-8 hover:decoration-green-400 hover:decoration-4">Contact</span></a>
                     </div>
                 </nav>
                 <div class="navbar-menu relative z-50 hidden">
                     <div class="navbar-backdrop fixed inset-0 bg-gray-800 opacity-25"></div>
-                    <nav class="fixed top-0 right-0 bottom-0 flex flex-col w-5/6 max-w-sm py-6 px-6 bg-gray-800 border-r overflow-y-auto">
+                    <nav
+                        class="fixed top-0 right-0 bottom-0 flex flex-col w-5/6 max-w-sm py-6 px-6 bg-gray-800 border-r overflow-y-auto">
                         <div class="flex justify-end mb-8">
                             <button class="navbar-close mt-8">
-                                <svg class="h-6 w-6 text-white cursor-pointer hover:text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                                <svg class="h-6 w-6 text-white cursor-pointer hover:text-white"
+                                    xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M6 18L18 6M6 6l12 12"></path>
                                 </svg>
                             </button>
                         </div>
                         <div>
                             <ul>
                                 <li class="mb-1 navbar-close">
-                                    <a class="block p-4 text-xl font-bold italic text-gray-400 hover:bg-blue-50 hover:text-green-500 rounded" href="#">Home</a>
+                                    <a class="block p-4 text-xl font-bold  text-gray-400 hover:bg-blue-50 hover:text-green-500 rounded"
+                                        href="#">Home</a>
                                 </li>
                                 <li class="mb-1 navbar-close">
-                                    <a class="block p-4 text-xl font-bold italic text-gray-400 hover:bg-blue-50 hover:text-green-500 rounded" href="#about">About</a>
+                                    <a class="block p-4 text-xl font-bold  text-gray-400 hover:bg-blue-50 hover:text-green-500 rounded"
+                                        href="#about">About</a>
                                 </li>
                                 <li class="mb-1 navbar-close">
-                                    <a class="block p-4 text-xl font-bold italic text-gray-400 hover:bg-blue-50 hover:text-green-500 rounded" href="#register">Register</a>
+                                    <a class="block p-4 text-xl font-bold  text-gray-400 hover:bg-blue-50 hover:text-green-500 rounded"
+                                        href="#register">Register</a>
                                 </li>
                                 <li class="mb-1 navbar-close">
-                                    <a class="block p-4 text-xl font-bold italic text-gray-400 hover:bg-blue-50 hover:text-green-500 rounded" href="#terms">Terms</a>
+                                    <a class="block p-4 text-xl font-bold  text-gray-400 hover:bg-blue-50 hover:text-green-500 rounded"
+                                        href="#terms">Terms</a>
                                 </li>
                                 <li class="mb-1 navbar-close">
-                                    <a class="block p-4 text-xl font-bold italic text-gray-400 hover:bg-blue-50 hover:text-green-500 rounded" href="#contact">Contact</a>
+                                    <a class="block p-4 text-xl font-bold  text-gray-400 hover:bg-blue-50 hover:text-green-500 rounded"
+                                        href="#contact">Contact</a>
                                 </li>
                             </ul>
                         </div>
@@ -105,30 +116,34 @@
             </div>
 
             <!-- Header -->
-            <div class="header pt-20 text-center">
-                <div class="text-white italic lg:mt-32 mt-8 px-12 lg:px-0">
-                    <p class="hidden lg:block text-8xl font-black">Luxathon 4.0</p>
-                    <p class="lg:hidden text-6xl font-black">Luxathon 4.0</p>
-                    <p class="lg:text-xl text-lg font-semibold mt-4">24 Hour National Level Illumination Hackathon</p>
-                    <p class="lg:text-xl text-lg font-bold mt-4"><span class="py-2 px-4 rounded-lg bg-blue-500">Prizes worth Rs. 70,000</span></p>
-                    
-                    <p class="text-xl mt-12">9-11 December, 2023</p>
-                    <p class="lg:text-2xl text-md mt-2 font-bold">IEEE Student Branch <br>College of Engineeirng Karunagappally</p>
-                    <div class="mt-16">
-                        <a href="#register"><span
-                            class="px-4 py-2 rounded-md bg-green-500 text-3xl font-black hover:bg-yellow-500 text-black cursor-pointer">Register
-                            Now</span></a>
-                    </div>
-                    <div class="social mt-8 flex justify-center">
-                        <img src="assets/linkedin.png" alt="" class="w-8 mx-2">
-                        <img src="assets/instagram.png" alt="" class="w-8 mx-2">
-                        <img src="assets/twitter.png" alt="" class="w-8 mx-2">
-                        <img src="assets/facebook.png" alt="" class="w-8 mx-2">
+            <div class="header lg:pt-10">
+                <div class="">
+                    <div class="text-white lg:mt-32 mt-8 px-12 lg:px-0 lg:text-start text-center">
+                        <p class="hidden lg:block text-8xl font-black">Luxathon 4.0</p>
+                        <p class="lg:hidden text-6xl font-black">Luxathon 4.0</p>
+                        <p class="lg:text-xl text-lg font-semibold mt-0">24 Hour National Level Illumination Hackathon
+                        </p>
+                        <p class="lg:text-xl text-lg font-bold mt-4"><span
+                                class="py-2 px-4 rounded-lg bg-blue-500">Prizes worth Rs. 70,000</span></p>
+
+                        <p class="text-md mt-12">8th, 9th and 10th December, 2023</p>
+                        <p class="lg:text-md text-md mt-2 font-bold">IEEE Student Branch College of Engineeirng
+                            Karunagappally</p>
+                        <div class="mt-16">
+                            <a href="#register"><span
+                                    class="px-4 py-4 rounded-md bg-green-500 text-xl font-semibold italic hover:bg-yellow-500 text-white cursor-pointer">Register Now (Early bird)</span></a>
+                        </div>
+                        <!-- <div class="social mt-8 flex">
+                            <img src="assets/linkedin.png" alt="" class="w-8 mx-2">
+                            <img src="assets/instagram.png" alt="" class="w-8 mx-2">
+                            <img src="assets/twitter.png" alt="" class="w-8 mx-2">
+                            <img src="assets/facebook.png" alt="" class="w-8 mx-2">
+                        </div> -->
                     </div>
                 </div>
                 <div class="flex justify-center lg:mt-28 mt-12">
                     <!-- <img src="assets/arrow-down-sign-to-navigate.png" alt="" class="mx-2 w-8 animate-bounce"> -->
-                    <span class="mx-2 w-8 animate-bounce text-2xl text-green-500">▼</span>
+                    <span class="mx-2 w-8 animate-bounce text-2xl text-white">▼</span>
                 </div>
             </div>
         </div>
@@ -154,7 +169,7 @@
                     <div class="flex justify-center">
                         <img src="assets/logo5.png" alt="" class="h-12">
                     </div>
-                  </div>
+                </div>
             </div>
         </div>
     </div>
@@ -164,7 +179,7 @@
             <!-- About -->
             <div class="about">
                 <div class="w-full text-center mb-16">
-                    <p class="lg:text-6xl text-4xl italic text-white font-black">About</p>
+                    <p class="lg:text-6xl text-4xl  text-white font-black">About</p>
                 </div>
                 <div class="lg:mx-64 mx-8">
                     <div id="animation-carousel" class="relative w-full mb-8 rounded-lg" data-carousel="static">
@@ -249,7 +264,7 @@
                     </div>
 
                     <div class="">
-                        <p class="text-white italic lg:text-md text-sm text-justify">
+                        <p class="text-white  lg:text-md text-sm text-justify">
                             Luxathon is a dynamic 24-hour illumination hackathon that challenges participants to fuse
                             creativity and
                             technology in crafting transformative lighting experiences. Bringing together individuals
@@ -283,115 +298,135 @@
             <!-- Register -->
             <div class="register w-full">
                 <div class="w-full text-center mb-16">
-                    <p class="lg:text-6xl text-4xl italic text-white font-black">Join the legacy</p>
-                    <p class="lg:text-4xl text-2xl italic text-white font-black">Register today</p>
+                    <p class="lg:text-6xl text-4xl  text-white font-black">Join the legacy</p>
+                    <p class="lg:text-4xl text-2xl  text-white font-black">Register today</p>
                 </div>
                 <div class="mt-16 text-center mb-8">
-                    <p class="mb-4"><span class="py-2 px-4 rounded-lg bg-yellow-500 font-bold">Early bird pricing</span></p>
-                    <p class="lg:text-2xl text-md text-md italic text-white">Valid till <span class="font-bold">20th, November 2023</span></p>
+                    <p class="mb-4"><span class="py-2 px-4 rounded-lg bg-yellow-500 font-bold">Early bird pricing</span>
+                    </p>
+                    <p class="lg:text-2xl text-md text-md  text-white">Valid till <span class="font-bold">20th, November
+                            2023</span></p>
                 </div>
-                <div class="grid lg:grid-cols-4 lg:gap-2 md:grid-cols-3 md:gap-2 grid-cols-2 gap-4 lg:flex lg:justify-center items-center h-fit mx-4">
-                    <div class="card lg:w-fit sm:w-full rounded-xl bg-black lg:p-8 p-4 py-8 lg:m-4 text-center text-white h-full flex flex-col justify-between">
+                <div
+                    class="grid lg:grid-cols-4 lg:gap-2 md:grid-cols-3 md:gap-2 grid-cols-2 gap-4 lg:flex lg:justify-center items-center h-fit mx-4">
+                    <div
+                        class="card lg:w-fit sm:w-full rounded-xl bg-black lg:p-8 p-4 py-8 lg:m-4 text-center text-white h-full flex flex-col justify-between">
                         <div>
-                            <p class="italic font-bold text-xl">IEEE PES/PHO Member</p>
-                            <p class="italic lg:text-md text-sm mt-6">Students with valid <br>IEEE PES/PHO membership</p>
+                            <p class=" font-bold text-xl">IEEE PES/PHO Member</p>
+                            <p class=" lg:text-md text-sm mt-6">Students with valid <br>IEEE PES/PHO membership</p>
                         </div>
                         <div>
-                            <p class="italic font-bold lg:text-4xl text-xl mt-16">
-                                <a href="https://konfhub.com/checkout/luxathon-4-0"><span class="py-2 px-4 rounded-md bg-green-500 text-black cursor-pointer hover:bg-yellow-500">Rs. 1100*</span></a>
+                            <p class=" font-bold lg:text-4xl text-xl mt-16">
+                                <a href="https://www.townscript.com/v2/e/luxathon-4-0/booking/tickets"><span
+                                        class="py-2 px-4 rounded-md bg-green-500 text-black cursor-pointer hover:bg-yellow-500">Rs.
+                                        1100*</span></a>
                             </p>
-                            <p class="lg:text-sm text-xs mt-2 italic">*per person price</p>
+                            <p class="lg:text-sm text-xs mt-2 ">*per person price</p>
                         </div>
                     </div>
-                    <div class="card lg:w-fit sm:w-full rounded-xl bg-black lg:p-8 p-4 py-8 lg:m-4 text-center text-white h-full flex flex-col justify-between">
+                    <div
+                        class="card lg:w-fit sm:w-full rounded-xl bg-black lg:p-8 p-4 py-8 lg:m-4 text-center text-white h-full flex flex-col justify-between">
                         <div>
-                            <p class="italic font-bold text-xl">IEEE Member</p>
-                            <p class="italic lg:text-md text-sm mt-6">Students with valid <br>IEEE membership</p>
+                            <p class=" font-bold text-xl">IEEE Member</p>
+                            <p class=" lg:text-md text-sm mt-6">Students with valid <br>IEEE membership</p>
                         </div>
                         <div>
-                            <p class="italic font-bold lg:text-4xl text-xl mt-16">
-                                <a href="https://konfhub.com/checkout/luxathon-4-0"><span class="py-2 px-4 rounded-md bg-green-500 text-black cursor-pointer hover:bg-yellow-500">Rs. 1300*</span></a>
+                            <p class=" font-bold lg:text-4xl text-xl mt-16">
+                                <a href="https://www.townscript.com/v2/e/luxathon-4-0/booking/tickets"><span
+                                        class="py-2 px-4 rounded-md bg-green-500 text-black cursor-pointer hover:bg-yellow-500">Rs.
+                                        1300*</span></a>
                             </p>
-                            <p class="lg:text-sm text-xs mt-2 italic">*per person price</p>
+                            <p class="lg:text-sm text-xs mt-2 ">*per person price</p>
                         </div>
                     </div>
-                    <div class="card lg:w-fit sm:w-full rounded-xl bg-black lg:p-8 p-4 py-8 lg:m-4 text-center text-white h-full flex flex-col justify-between">
+                    <div
+                        class="card lg:w-fit sm:w-full rounded-xl bg-black lg:p-8 p-4 py-8 lg:m-4 text-center text-white h-full flex flex-col justify-between">
                         <div>
-                            <p class="italic font-bold text-xl">Non-IEEE Member</p>
-                            <p class="italic lg:text-md text-sm mt-6">Students without <br>IEEE membership</p>
+                            <p class=" font-bold text-xl">Non-IEEE Member</p>
+                            <p class=" lg:text-md text-sm mt-6">Students without <br>IEEE membership</p>
                         </div>
                         <div>
-                            <p class="italic font-bold lg:text-4xl text-xl mt-16">
-                                <a href="https://konfhub.com/checkout/luxathon-4-0"><span class="py-2 px-4 rounded-md bg-green-500 text-black cursor-pointer hover:bg-yellow-500">Rs. 1500*</span></a>
+                            <p class=" font-bold lg:text-4xl text-xl mt-16">
+                                <a href="https://www.townscript.com/v2/e/luxathon-4-0/booking/tickets"><span
+                                        class="py-2 px-4 rounded-md bg-green-500 text-black cursor-pointer hover:bg-yellow-500">Rs.
+                                        1500*</span></a>
                             </p>
-                            <p class="lg:text-sm text-xs mt-2 italic">*per person price</p>
+                            <p class="lg:text-sm text-xs mt-2 ">*per person price</p>
                         </div>
                     </div>
-                    <div class="card lg:w-fit sm:w-full rounded-xl bg-black lg:p-8 p-4 py-8 lg:m-4 text-center text-white h-full flex flex-col justify-between">
+                    <div
+                        class="card lg:w-fit sm:w-full rounded-xl bg-black lg:p-8 p-4 py-8 lg:m-4 text-center text-white h-full flex flex-col justify-between">
                         <div>
-                            <p class="italic font-bold text-xl">Visitor</p>
-                            <p class="italic lg:text-md text-sm mt-6">Students attending only <br>Workshops and Talks</p>
+                            <p class=" font-bold text-xl">Visitor</p>
+                            <p class=" lg:text-md text-sm mt-6">Students attending only <br>Workshops and Talks</p>
                         </div>
                         <div>
-                            <p class="italic font-bold lg:text-4xl text-xl mt-16">
-                                <a href="https://konfhub.com/checkout/luxathon-4-0"><span class="py-2 px-4 rounded-md bg-green-500 text-black cursor-pointer hover:bg-yellow-500">Rs. 300*</span></a>
+                            <p class=" font-bold lg:text-4xl text-xl mt-16">
+                                <a href="https://konfhub.com/luxathon-4-0#tickets"><span
+                                        class="py-2 px-4 rounded-md bg-green-500 text-black cursor-pointer hover:bg-yellow-500">Rs.
+                                        300*</span></a>
                             </p>
-                            <p class="lg:text-sm text-xs mt-2 italic">*per person price</p>
+                            <p class="lg:text-sm text-xs mt-2 ">*per person price</p>
                         </div>
                     </div>
                 </div>
 
                 <div class="mt-16 text-center mb-8">
-                    <p class="text-2xl italic text-white">Pricing after <span class="font-bold">20th, November
+                    <p class="text-2xl  text-white">Pricing after <span class="font-bold">20th, November
                             2023</span></p>
                 </div>
-                <div class="grid lg:grid-cols-4 lg:gap-2 grid-cols-2 gap-4 lg:flex lg:justify-center items-center h-fit mx-4">
-                    <div class="card lg:w-fit sm:w-full rounded-xl bg-gray-600 lg:p-8 p-4 py-8 lg:m-4 text-center text-white h-full flex flex-col justify-between">
+                <div
+                    class="grid lg:grid-cols-4 lg:gap-2 grid-cols-2 gap-4 lg:flex lg:justify-center items-center h-fit mx-4">
+                    <div
+                        class="card lg:w-fit sm:w-full rounded-xl bg-gray-600 lg:p-8 p-4 py-8 lg:m-4 text-center text-white h-full flex flex-col justify-between">
                         <div>
-                            <p class="italic font-bold text-xl">IEEE PES/PHO Member</p>
-                            <p class="italic lg:text-md text-sm mt-6">Students with valid <br>IEEE PES/PHO membership</p>
+                            <p class=" font-bold text-xl">IEEE PES/PHO Member</p>
+                            <p class=" lg:text-md text-sm mt-6">Students with valid <br>IEEE PES/PHO membership</p>
                         </div>
                         <div>
-                            <p class="italic font-bold lg:text-4xl text-xl mt-16">
+                            <p class=" font-bold lg:text-4xl text-xl mt-16">
                                 <span class="py-2 px-4 rounded-md bg-gray-200 text-black">Rs. 1300*</span>
                             </p>
-                            <p class="lg:text-sm text-xs mt-2 italic">*per person price</p>
+                            <p class="lg:text-sm text-xs mt-2 ">*per person price</p>
                         </div>
                     </div>
-                    <div class="card lg:w-fit sm:w-full rounded-xl bg-gray-600 lg:p-8 p-4 py-8 lg:m-4 text-center text-white h-full flex flex-col justify-between">
+                    <div
+                        class="card lg:w-fit sm:w-full rounded-xl bg-gray-600 lg:p-8 p-4 py-8 lg:m-4 text-center text-white h-full flex flex-col justify-between">
                         <div>
-                            <p class="italic font-bold text-xl">IEEE Member</p>
-                            <p class="italic lg:text-md text-sm mt-6">Students with valid <br>IEEE membership</p>
+                            <p class=" font-bold text-xl">IEEE Member</p>
+                            <p class=" lg:text-md text-sm mt-6">Students with valid <br>IEEE membership</p>
                         </div>
                         <div>
-                            <p class="italic font-bold lg:text-4xl text-xl mt-16">
+                            <p class=" font-bold lg:text-4xl text-xl mt-16">
                                 <span class="py-2 px-4 rounded-md bg-gray-200 text-black">Rs. 1500*</span>
                             </p>
-                            <p class="lg:text-sm text-xs mt-2 italic">*per person price</p>
+                            <p class="lg:text-sm text-xs mt-2 ">*per person price</p>
                         </div>
                     </div>
-                    <div class="card lg:w-fit sm:w-full rounded-xl bg-gray-600 lg:p-8 p-4 py-8 lg:m-4 text-center text-white h-full flex flex-col justify-between">
+                    <div
+                        class="card lg:w-fit sm:w-full rounded-xl bg-gray-600 lg:p-8 p-4 py-8 lg:m-4 text-center text-white h-full flex flex-col justify-between">
                         <div>
-                            <p class="italic font-bold text-xl">Non-IEEE Member</p>
-                            <p class="italic lg:text-md text-sm mt-6">Students without <br>IEEE membership</p>
+                            <p class=" font-bold text-xl">Non-IEEE Member</p>
+                            <p class=" lg:text-md text-sm mt-6">Students without <br>IEEE membership</p>
                         </div>
                         <div>
-                            <p class="italic font-bold lg:text-4xl text-xl mt-16">
+                            <p class=" font-bold lg:text-4xl text-xl mt-16">
                                 <span class="py-2 px-4 rounded-md bg-gray-200 text-black">Rs. 1700*</span>
                             </p>
-                            <p class="lg:text-sm text-xs mt-2 italic">*per person price</p>
+                            <p class="lg:text-sm text-xs mt-2 ">*per person price</p>
                         </div>
                     </div>
-                    <div class="card lg:w-fit sm:w-full rounded-xl bg-gray-600 lg:p-8 p-4 py-8 lg:m-4 text-center text-white h-full flex flex-col justify-between">
+                    <div
+                        class="card lg:w-fit sm:w-full rounded-xl bg-gray-600 lg:p-8 p-4 py-8 lg:m-4 text-center text-white h-full flex flex-col justify-between">
                         <div>
-                            <p class="italic font-bold text-xl">Visitor</p>
-                            <p class="italic lg:text-md text-sm mt-6">Students attending only <br>Workshops and Talks</p>
+                            <p class=" font-bold text-xl">Visitor</p>
+                            <p class=" lg:text-md text-sm mt-6">Students attending only <br>Workshops and Talks</p>
                         </div>
                         <div>
-                            <p class="italic font-bold lg:text-4xl text-xl mt-16">
+                            <p class=" font-bold lg:text-4xl text-xl mt-16">
                                 <span class="py-2 px-4 rounded-md bg-gray-200 text-black">Rs. 500*</span>
                             </p>
-                            <p class="lg:text-sm text-xs mt-2 italic">*per person price</p>
+                            <p class="lg:text-sm text-xs mt-2 ">*per person price</p>
                         </div>
                     </div>
                 </div>
@@ -404,22 +439,25 @@
             <!-- Terms -->
             <div class="terms lg:mx-0 mx-2">
                 <div class="w-full text-center mb-16">
-                    <p class="lg:text-6xl text-4xl italic text-white font-black">Terms and Conditions</p>
+                    <p class="lg:text-6xl text-4xl  text-white font-black">Terms and Conditions</p>
                 </div>
                 <div class="lg:mx-64 mx-8">
-                    <p class="text-white italic text-md text-justify h-full">
+                    <p class="text-white  text-md text-justify h-full">
                         Read the Terms & Conditions carefully before buying your tickets.
                     </p>
-                    <ul class="text-white list-decimal italic mt-4 text-justify text-sm">
-                        <li>Participants should bring their college ID card/Government Approved ID Card to enter the
-                            premises.</li>
-                        <li>A soft copy of the IEEE membership card has to be shown at the registration desk. Non-IEEE
-                            members registered as IEEE members will be imposed with a fine of Rs. 500.</li>
-                        <li>Students registered as IEEE PES/SPS/PHO Members, should provide their PES/SPS/PHO Membership
-                            subscription while registering and should keep a soft copy to be shown at the registration
-                            desk.</li>
-                        <li>Your vehicle is not allowed inside the campus as well as no safeguarding of your vehicle
-                            will be provided by the authorities.</li>
+                    <ul class="text-white list-decimal  mt-4 text-justify text-sm">
+                        <li>The hackathon is open to teams with a minimum of four and a maximum of five members.</li>
+                        <li>The team must carry the basic programmable boards, and components for the competition will
+                            be provided (returnable after the event).</li>
+                        <li>Each team is required to have at least one laptop.</li>
+                        <li>After the payment, no refunds will be processed.</li>
+                        <li>Participants should bring their college ID card/Government-Approved ID Card to enter the premises.</li>
+                        <li>A soft copy of the IEEE membership card has to be shown at the registration desk. Non-IEEE members registered as IEEE members and Non-PES/PHO members registered as PES/PHO members will be imposed with a fine of Rs. 400.</li>
+                        <li>Students registered as IEEE PES/PHO Members, should provide their PES/PHO Membership subscription while registering and should keep a soft copy to be shown at the registration desk.</li>
+                        <li>Your vehicle is not allowed inside the campus as well and no safeguarding of your vehicle will be provided by the authorities.</li>
+                        <li>A cloakroom will be provided inside the venue. However, the organisers won't be held responsible for any lost wallets, ornaments, etc.</li>
+                        <li>Students shouldn’t leave the college premises without providing valid consent to the event coordinators.</li>
+                        <li>Beds will be provided. You are requested to bring a bed sheet and the necessary commodities if required.</li>
                     </ul>
                 </div>
             </div>
@@ -431,12 +469,13 @@
             <!-- Register -->
             <div class="contact">
                 <div class="w-full text-center lg:mb-16 mb-8">
-                    <p class="lg:text-6xl text-4xl italic text-white font-black">Contact</p>
+                    <p class="lg:text-6xl text-4xl  text-white font-black">Contact</p>
                 </div>
                 <div class="flex justify-center">
                     <div class="card w-fit rounded-xl bg-black p-8 m-4 text-white lg:flex lg:justify-center">
                         <div class="lg:m-8">
-                            <div style="text-decoration:none; overflow:hidden;max-width:100%;" class="rounded-xl lg:h-80 lg:w-80">
+                            <div style="text-decoration:none; overflow:hidden;max-width:100%;"
+                                class="rounded-xl lg:h-80 lg:w-80">
                                 <div id="g-mapdisplay" style="height:100%; width:100%;max-width:100%;"><iframe
                                         style="height:100%;width:100%;border:0;" frameborder="0"
                                         src="https://www.google.com/maps/embed/v1/place?q=college+of+engineering+karunagappally&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"></iframe>
@@ -455,12 +494,16 @@
                             </div>
                         </div>
                         <div class="lg:m-8 lg:mt-8 mt-8 text-center">
-                            <p class="italic font-bold text-xl mb-4">Address</p>
-                            <p class="italic text-white mb-8">IEEE Student Branch, <br>College of Engineering Karunagappally, <br>Kollam, Kerala, 690523</p>
-                            <p class="italic font-bold text-xl mb-4">Phone</p>
-                            <p class="italic text-white mb-8">Sidhi: <a href="tel:+919500950011" class="hover:text-green-500">+91 9500950011</a> <br>Archa: <a href="tel:+919500950011" class="hover:text-green-500">+91 9500950011</a></p>
-                            <p class="italic font-bold text-xl mb-4">Email</p>
-                            <p class="italic text-white mb-8"><a href="mailto:ieeesbcek2000@gmail.com" class="hover:text-green-500">ieeesbcek2000@gmail.com</a></p>
+                            <p class=" font-bold text-xl mb-4">Address</p>
+                            <p class=" text-white mb-8">IEEE Student Branch, <br>College of Engineering Karunagappally,
+                                <br>Kollam, Kerala, 690523</p>
+                            <p class=" font-bold text-xl mb-4">Phone</p>
+                            <p class=" text-white mb-8">Sidhi: <a href="tel:+919500950011"
+                                    class="hover:text-green-500">+91 9500950011</a> <br>Archa: <a
+                                    href="tel:+919500950011" class="hover:text-green-500">+91 9500950011</a></p>
+                            <p class=" font-bold text-xl mb-4">Email</p>
+                            <p class=" text-white mb-8"><a href="mailto:ieeesbcek2000@gmail.com"
+                                    class="hover:text-green-500">ieeesbcek2000@gmail.com</a></p>
                         </div>
                     </div>
                 </div>
@@ -478,7 +521,7 @@
                         <div class="flex justify-center">
                             <img src="assets/logo.png" alt="" class="w-10 mb-4">
                         </div>
-                        <p class="text-white italic text-xs text-center">
+                        <p class="text-white  text-xs text-center">
                             &copy; All rights reserved <br>
                             Website developed by Team CEK💚
                         </p>
@@ -504,7 +547,7 @@
         if (toTopButton) {
 
             // On scroll event, toggle button visibility based on scroll position
-            window.onscroll = function() {
+            window.onscroll = function () {
                 if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
                     toTopButton.classList.remove("hidden");
                 } else {
@@ -513,7 +556,7 @@
             };
 
             // Function to scroll to the top of the page smoothly
-            window.goToTop = function() {
+            window.goToTop = function () {
                 window.scrollTo({
                     top: 0,
                     behavior: 'smooth'
@@ -523,38 +566,38 @@
     </script>
     <script>
         // Burger menus
-        document.addEventListener('DOMContentLoaded', function() {
+        document.addEventListener('DOMContentLoaded', function () {
             // open
             const burger = document.querySelectorAll('.navbar-burger');
             const menu = document.querySelectorAll('.navbar-menu');
-        
+
             if (burger.length && menu.length) {
                 for (var i = 0; i < burger.length; i++) {
-                    burger[i].addEventListener('click', function() {
+                    burger[i].addEventListener('click', function () {
                         for (var j = 0; j < menu.length; j++) {
                             menu[j].classList.toggle('hidden');
                         }
                     });
                 }
             }
-        
+
             // close
             const close = document.querySelectorAll('.navbar-close');
             const backdrop = document.querySelectorAll('.navbar-backdrop');
-        
+
             if (close.length) {
                 for (var i = 0; i < close.length; i++) {
-                    close[i].addEventListener('click', function() {
+                    close[i].addEventListener('click', function () {
                         for (var j = 0; j < menu.length; j++) {
                             menu[j].classList.toggle('hidden');
                         }
                     });
                 }
             }
-        
+
             if (backdrop.length) {
                 for (var i = 0; i < backdrop.length; i++) {
-                    backdrop[i].addEventListener('click', function() {
+                    backdrop[i].addEventListener('click', function () {
                         for (var j = 0; j < menu.length; j++) {
                             menu[j].classList.toggle('hidden');
                         }
@@ -562,12 +605,12 @@
                 }
             }
         });
-        </script>
-        <script>
-            $(window).on('load', function () {
-              $('#loading').hide();
-            }) 
-          </script>
+    </script>
+    <script>
+        $(window).on('load', function () {
+            $('#loading').hide();
+        }) 
+    </script>
 
 </body>
 
