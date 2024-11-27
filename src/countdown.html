@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    .countdown-timer {
+      background-color: transparent;
+      font-size: 60px;
+      border: none;
+      padding: 0;
+      width: 300px;
+      height: 100px;
+      text-align: center;
+      display: inline-block;
+      position: relative;
+    }
+
+    .countdown-timer::before {
+      content: "Hurry Up!";
+      font-family: Arial, sans-serif;
+      font-size: 18px; /* Adjusted font size */
+      color: white;
+      position: absolute;
+      top: 5px; /* Adjusted top position for mobile view */
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    @media (max-width: 768px) { /* Adjust for smaller screens */
+      .countdown-timer {
+        font-size: 40px; /* Adjust font size for smaller screens */
+      }
+      .countdown-timer::before {
+        font-size: 14px; /* Adjust font size for smaller screens */
+        top: 2px; /* Further adjust top position for mobile view */
+      }
+    }
+  </style>
+</head>
+<body>
+  <script src="https://cdn.logwork.com/widget/countdown.js"></script>
+  <a href="https://logwork.com/countdown-timer" class="countdown-timer" data-style="flip2" data-timezone="Asia/Kolkata" data-textcolor="#000000" data-date="2024-12-14 08:00" data-background="#02b902" data-digitscolor="#000000" data-unitscolor="#ffffff">  &nbsp;  </a>
+</body>
+</html>

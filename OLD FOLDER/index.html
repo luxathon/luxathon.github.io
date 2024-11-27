@@ -1,0 +1,809 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <style>
+        * {
+            font-family: 'Montserrat', sans-serif;
+        }
+    </style>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.1.1/flowbite.min.css" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.1.1/flowbite.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+
+<body class="">
+
+    <div id="loading" class="fixed flex items-center justify-center w-full h-screen z-50 bg-black">
+        <div class="w-12 h-12 rounded-full animate-ping border-4 border-solid border-green-500 border-t-transparent">
+        </div>
+    </div>
+
+    <div id="home" style="background-image: url('assets/banner2.png'); background-repeat: no-repeat; background-size: cover; background-position: center;" class="bg-black">
+        <div class="container mx-auto lg:pt-8 pt-4 lg:pb-24 pb-12">
+            <!-- Navigation bar -->
+            <div class="">
+                <!-- <div class="logo">
+                    <img src="assets/logo.png" alt="" class="w-10">
+                </div>
+                <div class="links text-white flex  font-semibold text-sm">
+                    <a href="#home"><span
+                            class="ml-4 hover:underline hover:underline-offset-8 hover:decoration-green-400 hover:decoration-4">Home</span></a>
+                    <a href="#about"><span
+                            class="ml-4 hover:underline hover:underline-offset-8 hover:decoration-green-400 hover:decoration-4">About</span></a>
+                    <a href="#register"><span
+                        class="ml-4 hover:underline hover:underline-offset-8 hover:decoration-green-400 hover:decoration-4">Register</span></a>
+                    <a href="#terms"><span
+                        class="ml-4 hover:underline hover:underline-offset-8 hover:decoration-green-400 hover:decoration-4">Terms</span></a>
+                    <a href="#contact"><span
+                        class="ml-4 hover:underline hover:underline-offset-8 hover:decoration-green-400 hover:decoration-4">Contact</span></a>
+                </div> -->
+
+                <nav class="px-4 py-4 flex justify-between items-center">
+                    <a class="text-3xl font-bold leading-none p-3" href="#">
+                        <img src="assets/logo.png" alt="" class="w-12 hover:opacity-70">
+                    </a>
+                    <div class="lg:hidden">
+                        <button class="navbar-burger flex items-center text-white p-3">
+                            <svg class="block h-6 w-6 fill-current" viewBox="0 0 20 20"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <title>Mobile menu</title>
+                                <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="links text-white lg:flex  font-semibold text-sm hidden">
+                        <a href="#home"><span
+                                class="ml-6 hover:underline hover:underline-offset-8 hover:decoration-green-400 hover:decoration-4">Home</span></a>
+                        <a href="#participation"><span
+                                class="ml-6 hover:underline hover:underline-offset-8 hover:decoration-green-400 hover:decoration-4">Participation</span></a>
+                        <a href="#about"><span
+                                class="ml-6 hover:underline hover:underline-offset-8 hover:decoration-green-400 hover:decoration-4">About</span></a>
+                        <a href="#register"><span
+                                class="ml-6 hover:underline hover:underline-offset-8 hover:decoration-green-400 hover:decoration-4">Register</span></a>
+                        <a href="#terms"><span
+                                class="ml-6 hover:underline hover:underline-offset-8 hover:decoration-green-400 hover:decoration-4">Terms</span></a>
+                        <a href="#contact"><span
+                                class="ml-6 hover:underline hover:underline-offset-8 hover:decoration-green-400 hover:decoration-4">Contact</span></a>
+                    </div>
+                </nav>
+                <div class="navbar-menu relative z-50 hidden">
+                    <div class="navbar-backdrop fixed inset-0 bg-gray-800 opacity-25"></div>
+                    <nav
+                        class="fixed top-0 right-0 bottom-0 flex flex-col w-5/6 max-w-sm py-6 px-6 bg-gray-800 border-r overflow-y-auto">
+                        <div class="flex justify-end mb-8">
+                            <button class="navbar-close mt-8">
+                                <svg class="h-6 w-6 text-white cursor-pointer hover:text-white"
+                                    xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M6 18L18 6M6 6l12 12"></path>
+                                </svg>
+                            </button>
+                        </div>
+                        <div>
+                            <ul>
+                                <li class="mb-1 navbar-close">
+                                    <a class="block p-4 text-xl font-bold  text-gray-400 hover:bg-blue-50 hover:text-green-500 rounded"
+                                        href="#">Home</a>
+                                </li>
+                                <li class="mb-1 navbar-close">
+                                    <a class="block p-4 text-xl font-bold  text-gray-400 hover:bg-blue-50 hover:text-green-500 rounded"
+                                        href="#participation">Participation</a>
+                                </li>
+                                <li class="mb-1 navbar-close">
+                                    <a class="block p-4 text-xl font-bold  text-gray-400 hover:bg-blue-50 hover:text-green-500 rounded"
+                                        href="#about">About</a>
+                                </li>
+                                <li class="mb-1 navbar-close">
+                                    <a class="block p-4 text-xl font-bold  text-gray-400 hover:bg-blue-50 hover:text-green-500 rounded"
+                                        href="#register">Register</a>
+                                </li>
+                                <li class="mb-1 navbar-close">
+                                    <a class="block p-4 text-xl font-bold  text-gray-400 hover:bg-blue-50 hover:text-green-500 rounded"
+                                        href="#terms">Terms</a>
+                                </li>
+                                <li class="mb-1 navbar-close">
+                                    <a class="block p-4 text-xl font-bold  text-gray-400 hover:bg-blue-50 hover:text-green-500 rounded"
+                                        href="#contact">Contact</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+
+            <!-- Header -->
+            <div class="header lg:pt-10">
+                <div class="">
+                    <div class="text-white lg:mt-32 mt-8 px-12 lg:px-0 lg:text-start text-center">
+                        <p class="hidden lg:block text-8xl font-black">Luxathon 4.0</p>
+                        <p class="lg:hidden text-5xl font-black">Luxathon 4.0</p>
+                        <p class="lg:text-xl text-lg font-semibold mt-0">24 Hour National Level Illumination Hackathon
+                        </p>
+                        <div class="flex justify-center">
+                            <p class="lg:text-xl text-lg font-bold mt-4 rounded-lg bg-blue-500 w-fit py-2 px-4"><span
+                                class="">Prizes worth Rs. 70,000</span></p>
+                        </div>
+                        
+
+                        <p class="text-md mt-12">8th, 9th and 10th December, 2023</p>
+                        <p class="lg:text-md text-md mt-2 font-bold">IEEE Student Branch College of Engineeirng
+                            Karunagappally</p>
+                        <div class="mt-16 hidden lg:block">
+                            <a href="#register"><span
+                                    class="px-4 py-4 rounded-md bg-green-500 text-xl font-semibold italic hover:bg-yellow-500 text-white cursor-pointer">Register Now</span></a>
+                        </div>
+                        <div class="mt-16 lg:hidden">
+                            <a href="#register"><span
+                                    class="px-4 py-4 rounded-md bg-green-500 text-md font-semibold italic hover:bg-yellow-500 text-white cursor-pointer">Register Now</span></a>
+                        </div>
+                        <!-- <div class="social mt-8 flex">
+                            <img src="assets/linkedin.png" alt="" class="w-8 mx-2">
+                            <img src="assets/instagram.png" alt="" class="w-8 mx-2">
+                            <img src="assets/twitter.png" alt="" class="w-8 mx-2">
+                            <img src="assets/facebook.png" alt="" class="w-8 mx-2">
+                        </div> -->
+                    </div>
+                </div>
+                <div class="flex justify-center lg:mt-28 mt-12">
+                    <!-- <img src="assets/arrow-down-sign-to-navigate.png" alt="" class="mx-2 w-8 animate-bounce"> -->
+                    <span class="mx-2 w-8 animate-bounce text-2xl text-white">▼</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="participation" class="bg-gray-900">
+        <div class="container mx-auto lg:pt-32 pt-16 pb-6">
+            <!-- About -->
+            <div class="about px-6">
+                <div class="w-full text-center mb-16">
+                    <p class="lg:text-6xl text-4xl  text-white font-black">How to Participate?</p>
+                </div>
+                <div class="flex justify-center items-center lg:mx-64">
+                    <img src="./assets/team1.png" alt="" class="hidden lg:block w-full">
+                    <img src="./assets/team2.png" alt="" class="lg:hidden w-full">
+                </div>
+                <div class="mt-6 flex justify-center items-center lg:mx-64">
+                    <p class="text-white text-md text-justify italic">
+                        Participants can join as a team of 4-5 members or as individual, who will be asked to form a team among other indivual registrants during the day 1 networking session. You can also join as a visitor, participating in Day 1 workshop and talks along with the oppurtunity to visit the hackathon teams during the competition.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="bg-gray-900">
+        <div class="container mx-auto lg:pb-24 pb-12 pt-6">
+            <!-- organizers -->
+            <div class="lg:mx-32 mx-8">
+                <div class="grid lg:grid-cols-4 lg:gap-4 grid-cols-2 gap-4 items-center">
+                    <div class="flex justify-center">
+                        <img src="assets/logo2.png" alt="" class="h-32">
+                    </div>
+                    <div class="flex justify-center">
+                        <img src="assets/logo1.png" alt="" class="h-24">
+                    </div>
+                    <!-- <div class="flex justify-center">
+                        <img src="assets/logo3.png" alt="" class="h-24">
+                    </div> -->
+                    <div class="flex justify-center">
+                        <img src="assets/logo4.png" alt="" class="h-24">
+                    </div>
+                    <div class="flex justify-center">
+                        <img src="assets/logo5.png" alt="" class="h-12">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="about" class="bg-black">
+        <div class="container mx-auto lg:py-32 py-16">
+            <!-- About -->
+            <div class="about">
+                <div class="w-full text-center mb-16">
+                    <p class="lg:text-6xl text-4xl  text-white font-black">About</p>
+                </div>
+                <div class="lg:mx-64 mx-8">
+                    <div id="animation-carousel" class="relative w-full mb-8 rounded-lg" data-carousel="slide">
+                        <!-- Carousel wrapper -->
+                        <div class="relative h-56 overflow-hidden rounded-lg md:h-96">
+                            <!-- Item 1 -->
+                            <div class="hidden duration-200 ease-linear" data-carousel-item>
+                                <img src="assets/carasoul/1.JPG"
+                                    class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                                    alt="...">
+                            </div>
+                            <!-- Item 2 -->
+                            <div class="hidden duration-200 ease-linear" data-carousel-item="active">
+                                <img src="assets/carasoul/2.JPG"
+                                    class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                                    alt="...">
+                            </div>
+                            <!-- Item 3 -->
+                            <div class="hidden duration-200 ease-linear" data-carousel-item=>
+                                <img src="assets/carasoul/3.JPG"
+                                    class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                                    alt="...">
+                            </div>
+                            <!-- Item 4 -->
+                            <div class="hidden duration-200 ease-linear" data-carousel-item>
+                                <img src="assets/carasoul/4.JPG"
+                                    class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                                    alt="...">
+                            </div>
+                            <!-- Item 5 -->
+                            <div class="hidden duration-200 ease-linear" data-carousel-item>
+                                <img src="assets/carasoul/5.JPG"
+                                    class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                                    alt="...">
+                            </div>
+                            <!-- Item 6 -->
+                            <div class="hidden duration-200 ease-linear" data-carousel-item>
+                                <img src="assets/carasoul/6.JPG"
+                                    class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                                    alt="...">
+                            </div>
+                            <!-- Item 7 -->
+                            <div class="hidden duration-200 ease-linear" data-carousel-item=>
+                                <img src="assets/carasoul/7.JPG"
+                                    class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                                    alt="...">
+                            </div>
+                            <!-- Item 8 -->
+                            <div class="hidden duration-200 ease-linear" data-carousel-item>
+                                <img src="assets/carasoul/8.JPG"
+                                    class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                                    alt="...">
+                            </div>
+                        </div>
+                        <!-- Slider controls -->
+                        <button type="button"
+                            class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+                            data-carousel-prev>
+                            <span
+                                class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                                <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true"
+                                    xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                        stroke-width="2" d="M5 1 1 5l4 4" />
+                                </svg>
+                                <span class="sr-only">Previous</span>
+                            </span>
+                        </button>
+                        <button type="button"
+                            class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+                            data-carousel-next>
+                            <span
+                                class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                                <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true"
+                                    xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                        stroke-width="2" d="m1 9 4-4-4-4" />
+                                </svg>
+                                <span class="sr-only">Next</span>
+                            </span>
+                        </button>
+                    </div>
+
+                    <div class="">
+                        <p class="text-white  lg:text-md text-sm text-justify">
+                            Luxathon is a dynamic 24-hour illumination hackathon that challenges participants to fuse
+                            creativity and
+                            technology in crafting transformative lighting experiences. Bringing together individuals
+                            with diverse
+                            skills, from design and engineering to programming, Luxathon explores the intersection of
+                            traditional
+                            and cutting-edge lighting methods. Participants work collaboratively to conceptualize and
+                            implement
+                            projects that showcase the innovative potential of light, utilizing technologies like LED,
+                            smart
+                            lighting, and interactive installations. The event culminates in a showcase where projects
+                            are judged
+                            based on creativity, technical innovation, and overall impact. Luxathon not only fosters
+                            community and
+                            cross-disciplinary collaboration but also serves as a platform for networking and skill
+                            development,
+                            propelling the field of illumination design forward. As a unique blend of rapid prototyping
+                            and
+                            aesthetic considerations, Luxathon inspires participants to redefine the possibilities of
+                            light in
+                            shaping our surroundings.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="register" class="bg-gray-900">
+        <div class="container lg:mx-auto lg:py-24 py-16">
+            <!-- Register -->
+            <div class="register w-full">
+                <div class="w-full text-center mb-16">
+                    <p class="lg:text-6xl text-4xl  text-white font-black">Registration closed</p>
+                    <p class="lg:text-4xl text-2xl  text-white font-black">Event Completed</p>
+                </div>
+                <div class="mt-16 text-center mb-8">
+                    <p class="mb-4"><span class="py-2 px-4 rounded-lg bg-yellow-500 font-bold">Ticket Pricing</span>
+                    </p>
+                    <!--p class="lg:text-2xl text-md text-md  text-white">Valid till <span class="font-bold">18th, November
+                            2023</span></p-->
+                </div>
+                <div
+                    class="grid lg:grid-cols-4 lg:gap-2 md:grid-cols-3 md:gap-2 grid-cols-2 gap-4 lg:flex lg:justify-center items-center h-fit mx-4">
+                    <div
+                        class="card lg:w-fit sm:w-full rounded-xl bg-black lg:p-8 p-4 py-8 lg:m-4 text-center text-white h-full flex flex-col justify-between">
+                        <div>
+                            <p class=" font-bold text-xl">IEEE PES/PHO Member</p>
+                            <p class=" lg:text-md text-sm mt-6">Students with valid <br>IEEE PES/PHO membership</p>
+                        </div>
+                        <div>
+                            <p class=" font-bold lg:text-4xl text-xl mt-16">
+                                <a href="https://www.townscript.com/v2/e/luxathon-4-0/booking/tickets"><span
+                                        class="py-2 px-4 rounded-md bg-green-500 text-black cursor-pointer hover:bg-yellow-500">Rs.
+                                        1100*</span></a>
+                            </p>
+                            <p class="lg:text-sm text-xs mt-2 ">*per person price</p>
+                        </div>
+                    </div>
+                    <div
+                        class="card lg:w-fit sm:w-full rounded-xl bg-black lg:p-8 p-4 py-8 lg:m-4 text-center text-white h-full flex flex-col justify-between">
+                        <div>
+                            <p class=" font-bold text-xl">IEEE Member</p>
+                            <p class=" lg:text-md text-sm mt-6">Students with valid <br>IEEE membership</p>
+                        </div>
+                        <div>
+                            <p class=" font-bold lg:text-4xl text-xl mt-16">
+                                <a href="https://www.townscript.com/v2/e/luxathon-4-0/booking/tickets"><span
+                                        class="py-2 px-4 rounded-md bg-green-500 text-black cursor-pointer hover:bg-yellow-500">Rs.
+                                        1300*</span></a>
+                            </p>
+                            <p class="lg:text-sm text-xs mt-2 ">*per person price</p>
+                        </div>
+                    </div>
+                    <div
+                        class="card lg:w-fit sm:w-full rounded-xl bg-black lg:p-8 p-4 py-8 lg:m-4 text-center text-white h-full flex flex-col justify-between">
+                        <div>
+                            <p class=" font-bold text-xl">Non-IEEE Member</p>
+                            <p class=" lg:text-md text-sm mt-6">Students without <br>IEEE membership</p>
+                        </div>
+                        <div>
+                            <p class=" font-bold lg:text-4xl text-xl mt-16">
+                                <a href="https://www.townscript.com/v2/e/luxathon-4-0/booking/tickets"><span
+                                        class="py-2 px-4 rounded-md bg-green-500 text-black cursor-pointer hover:bg-yellow-500">Rs.
+                                        1500*</span></a>
+                            </p>
+                            <p class="lg:text-sm text-xs mt-2 ">*per person price</p>
+                        </div>
+                    </div>
+                    <div
+                        class="card lg:w-fit sm:w-full rounded-xl bg-black lg:p-8 p-4 py-8 lg:m-4 text-center text-white h-full flex flex-col justify-between">
+                        <div>
+                            <p class=" font-bold text-xl">Visitor</p>
+                            <p class=" lg:text-md text-sm mt-6">Students attending only <br>Workshops and Talks</p>
+                        </div>
+                        <div>
+                            <p class=" font-bold lg:text-4xl text-xl mt-16">
+                                <a href="https://konfhub.com/checkout/luxathon-4-0?ticketId=10667"><span
+                                        class="py-2 px-4 rounded-md bg-green-500 text-black cursor-pointer hover:bg-yellow-500">Rs.
+                                        300*</span></a>
+                            </p>
+                            <p class="lg:text-sm text-xs mt-2 ">*per person price</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!--div class="mt-16 text-center mb-8">
+                    <p class="text-2xl  text-white">Pricing after <span class="font-bold">18th, November
+                            2023</span></p>
+                </div>
+                <div
+                    class="grid lg:grid-cols-4 lg:gap-2 grid-cols-2 gap-4 lg:flex lg:justify-center items-center h-fit mx-4">
+                    <div
+                        class="card lg:w-fit sm:w-full rounded-xl bg-gray-600 lg:p-8 p-4 py-8 lg:m-4 text-center text-white h-full flex flex-col justify-between">
+                        <div>
+                            <p class=" font-bold text-xl">IEEE PES/PHO Member</p>
+                            <p class=" lg:text-md text-sm mt-6">Students with valid <br>IEEE PES/PHO membership</p>
+                        </div>
+                        <div>
+                            <p class=" font-bold lg:text-4xl text-xl mt-16">
+                                <span class="py-2 px-4 rounded-md bg-gray-200 text-black">Rs. 1300*</span>
+                            </p>
+                            <p class="lg:text-sm text-xs mt-2 ">*per person price</p>
+                        </div>
+                    </div>
+                    <div
+                        class="card lg:w-fit sm:w-full rounded-xl bg-gray-600 lg:p-8 p-4 py-8 lg:m-4 text-center text-white h-full flex flex-col justify-between">
+                        <div>
+                            <p class=" font-bold text-xl">IEEE Member</p>
+                            <p class=" lg:text-md text-sm mt-6">Students with valid <br>IEEE membership</p>
+                        </div>
+                        <div>
+                            <p class=" font-bold lg:text-4xl text-xl mt-16">
+                                <span class="py-2 px-4 rounded-md bg-gray-200 text-black">Rs. 1500*</span>
+                            </p>
+                            <p class="lg:text-sm text-xs mt-2 ">*per person price</p>
+                        </div>
+                    </div>
+                    <div
+                        class="card lg:w-fit sm:w-full rounded-xl bg-gray-600 lg:p-8 p-4 py-8 lg:m-4 text-center text-white h-full flex flex-col justify-between">
+                        <div>
+                            <p class=" font-bold text-xl">Non-IEEE Member</p>
+                            <p class=" lg:text-md text-sm mt-6">Students without <br>IEEE membership</p>
+                        </div>
+                        <div>
+                            <p class=" font-bold lg:text-4xl text-xl mt-16">
+                                <span class="py-2 px-4 rounded-md bg-gray-200 text-black">Rs. 1700*</span>
+                            </p>
+                            <p class="lg:text-sm text-xs mt-2 ">*per person price</p>
+                        </div>
+                    </div>
+                    <div
+                        class="card lg:w-fit sm:w-full rounded-xl bg-gray-600 lg:p-8 p-4 py-8 lg:m-4 text-center text-white h-full flex flex-col justify-between">
+                        <div>
+                            <p class=" font-bold text-xl">Visitor</p>
+                            <p class=" lg:text-md text-sm mt-6">Students attending only <br>Workshops and Talks</p>
+                        </div>
+                        <div>
+                            <p class=" font-bold lg:text-4xl text-xl mt-16">
+                                <span class="py-2 px-4 rounded-md bg-gray-200 text-black">Rs. 500*</span>
+                            </p>
+                            <p class="lg:text-sm text-xs mt-2 ">*per person price</p>
+                        </div>
+                    </div>
+            </div-->
+            </div>
+        </div>
+    </div>
+
+
+
+    
+
+    <div id="about" class="bg-black">
+        <div class="container mx-auto lg:py-32 py-16">
+            <!-- About -->
+            <div class="about">
+                <div class="w-full text-center mb-16">
+                    <p class="lg:text-6xl text-4xl  text-white font-black">Gallery</p>
+                </div>
+                <div class="lg:mx-100  md:mx-64 mx-8">
+                    <div id="animation-carousel" class="relative w-full mb-8 rounded-lg" data-carousel="slide">
+                        <!-- Carousel wrapper -->
+                        <div class="relative h-56 overflow-hidden rounded-lg md:h-96">
+                            <!-- Item 1 -->
+                            <div class="hidden duration-200 ease-linear" data-carousel-item="active" >
+                                <img src="./assets/Photos/1.jpg"
+                                    class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                                    alt="...">
+                            </div>
+                            <!-- Item 2 -->
+                            <div class="hidden duration-200 ease-linear" data-carousel-item>
+                                <img src="./assets/Photos/2.5.jpg"
+                                    class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                                    alt="...">
+                            </div>
+                            <!-- Item 3 -->
+                            <div class="hidden duration-200 ease-linear" data-carousel-item=>
+                                <img src="./assets/Photos/3.jpg"
+                                    class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                                    alt="...">
+                            </div>
+                            <!-- Item 4 -->
+                            <div class="hidden duration-200 ease-linear" data-carousel-item>
+                                <img src="./assets/Photos/4.jpg"
+                                    class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                                    alt="...">
+                            </div>
+                            <!-- Item 5 -->
+                            <div class="hidden duration-200 ease-linear" data-carousel-item>
+                                <img src="./assets/Photos/5.jpg"
+                                    class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                                    alt="...">
+                            </div>
+                            <!-- Item 6 -->
+                            <div class="hidden duration-200 ease-linear" data-carousel-item>
+                                <img src="./assets/Photos/6.jpg"
+                                    class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                                    alt="...">
+                            </div>
+                            <!-- Item 7 -->
+                            <div class="hidden duration-200 ease-linear" data-carousel-item=>
+                                <img src="./assets/Photos/7.jpg"
+                                    class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                                    alt="...">
+                            </div>
+                            <!-- Item 8 -->
+                            <div class="hidden duration-200 ease-linear" data-carousel-item>
+                                <img src="./assets/Photos/8.jpg"
+                                    class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                                    alt="...">
+                            </div>
+                            <!--Item 9-->
+                            <div class="hidden duration-200 ease-linear" data-carousel-item>
+                                <img src="./assets/Photos/9.jpg"
+                                    class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                                    alt="...">
+                            </div>
+                            <!--Item 9-->
+                            <div class="hidden duration-200 ease-linear" data-carousel-item>
+                                <img src="./assets/Photos/10.jpg"
+                                    class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                                    alt="...">
+                            </div>
+                            <!--Item 9-->
+                            <div class="hidden duration-200 ease-linear" data-carousel-item>
+                                <img src="./assets/Photos/11.jpg"
+                                    class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                                    alt="...">
+                            </div>
+                            <!--Item 9-->
+                            <div class="hidden duration-200 ease-linear" data-carousel-item>
+                                <img src="./assets/Photos/12.jpg"
+                                    class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                                    alt="...">
+                            </div>
+                            <!--Item 9-->
+                            <div class="hidden duration-200 ease-linear" data-carousel-item>
+                                <img src="./assets/Photos/13.jpg"
+                                    class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                                    alt="...">
+                            </div>
+                            <div class="hidden duration-200 ease-linear" data-carousel-item>
+                                <img src="./assets/Photos/14.jpg"
+                                    class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                                    alt="...">
+                            </div>
+                            <div class="hidden duration-200 ease-linear" data-carousel-item>
+                                <img src="./assets/Photos/15.jpg"
+                                    class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                                    alt="...">
+                            </div>
+                            <div class="hidden duration-200 ease-linear" data-carousel-item>
+                                <img src="./assets/Photos/16.jpg"
+                                    class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                                    alt="...">
+                            </div>
+                        </div>
+                        <!-- Slider controls -->
+                        <button type="button"
+                            class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+                            data-carousel-prev>
+                            <span
+                                class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                                <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true"
+                                    xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                        stroke-width="2" d="M5 1 1 5l4 4" />
+                                </svg>
+                                <span class="sr-only">Previous</span>
+                            </span>
+                        </button>
+                        <button type="button"
+                            class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+                            data-carousel-next>
+                            <span
+                                class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                                <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true"
+                                    xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                        stroke-width="2" d="m1 9 4-4-4-4" />
+                                </svg>
+                                <span class="sr-only">Next</span>
+                            </span>
+                        </button>
+                    </div>
+
+                  
+                </div>
+            </div>
+        </div>
+    </div>
+
+               
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+    <div id="terms" class="bg-gray-900">
+        <div class="container mx-auto lg:py-32 py-16">
+            <!-- Terms -->
+            <div class="terms lg:mx-0 mx-2">
+                <div class="w-full text-center mb-16">
+                    <p class="lg:text-6xl text-4xl  text-white font-black">Terms and Conditions</p>
+                </div>
+                <div class="lg:mx-64 mx-8">
+                    <p class="text-white  text-md text-justify h-full">
+                        Read the Terms & Conditions carefully before buying your tickets.
+                    </p>
+                    <ul class="text-white list-decimal  mt-4 text-justify text-sm">
+                        <li>The hackathon is open to bothe individual registrants and teams with a minimum of four and a maximum of five members.</li>
+                        <li>If an individual has registered without a team, they will be asked to form one with other individual registrants during the day 1 networking session.</li>
+                        <li>The team must carry the basic programmable boards, and components for the competition will
+                            be provided (returnable after the event).</li>
+                        <li>Each team is required to have at least one laptop.</li>
+                        <li>After the payment, no refunds will be processed.</li>
+                        <li>Participants should bring their college ID card/Government-Approved ID Card to enter the premises.</li>
+                        <li>A soft copy of the IEEE membership card has to be shown at the registration desk. Non-IEEE members registered as IEEE members and Non-PES/PHO members registered as PES/PHO members will be imposed with a fine of Rs. 400.</li>
+                        <li>Students registered as IEEE PES/PHO Members, should provide their PES/PHO Membership subscription while registering and should keep a soft copy to be shown at the registration desk.</li>
+                        <li>Your vehicle is not allowed inside the campus as well and no safeguarding of your vehicle will be provided by the authorities.</li>
+                        <li>A cloakroom will be provided inside the venue. However, the organisers won't be held responsible for any lost wallets, ornaments, etc.</li>
+                        <li>Students shouldn’t leave the college premises without providing valid consent to the event coordinators.</li>
+                        <li>Beds will be provided. You are requested to bring a bed sheet and the necessary commodities if required.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+ 
+
+
+
+    <div id="contact" class="bg-black">
+        <div class="container mx-auto lg:py-24 py-12">
+            <!-- Register -->
+            <div class="contact">
+                <div class="w-full text-center lg:mb-16 mb-8">
+                    <p class="lg:text-6xl text-4xl  text-white font-black">Contact</p>
+                </div>
+                <div class="flex justify-center">
+                    <div class="card w-fit rounded-xl bg-black p-8 m-4 text-white lg:flex lg:justify-center">
+                        <div class="lg:m-8">
+                            <div style="text-decoration:none; overflow:hidden;max-width:100%;"
+                                class="rounded-xl lg:h-80 lg:w-80">
+                                <div id="g-mapdisplay" style="height:100%; width:100%;max-width:100%;"><iframe
+                                        style="height:100%;width:100%;border:0;" frameborder="0"
+                                        src="https://www.google.com/maps/embed/v1/place?q=college+of+engineering+karunagappally&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"></iframe>
+                                </div><a class="code-for-google-map" href="https://www.bootstrapskins.com/themes"
+                                    id="get-data-for-map"></a>
+                                <style>
+                                    #g-mapdisplay img.text-marker {
+                                        max-width: none !important;
+                                        background: none !important;
+                                    }
+
+                                    img {
+                                        max-width: none
+                                    }
+                                </style>
+                            </div>
+                        </div>
+                        <div class="lg:m-8 lg:mt-8 mt-8 text-center">
+                            <p class=" font-bold text-xl mb-4">Address</p>
+                            <p class=" text-white mb-8">IEEE Student Branch, <br>College of Engineering Karunagappally,
+                                <br>Kollam, Kerala, 690523</p>
+                            <p class=" font-bold text-xl mb-4">Phone</p>
+                            <p class=" text-white mb-8">Sidhi: <a href="tel:+919778231771"
+                                    class="hover:text-green-500">+91 9778231771</a> <br>Archa: <a
+                                    href="tel:+918848009402" class="hover:text-green-500">+91 8848009402</a></p>
+                            <p class=" font-bold text-xl mb-4">Email</p>
+                            <p class=" text-white mb-8"><a href="mailto:ieeesbcek2000@gmail.com"
+                                    class="hover:text-green-500">ieeesbcek2000@gmail.com</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="footer" class="bg-gray-900">
+        <div class="container mx-auto py-10">
+            <!-- Terms -->
+            <div class="footer">
+                <div class="flex justify-center">
+                    <div>
+                        <div class="flex justify-center">
+                            <img src="assets/logo.png" alt="" class="w-10 mb-4">
+                        </div>
+                        <p class="text-white  text-xs text-center">
+                            &copy; All rights reserved <br>
+                            Website developed by Team CEK💚
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <button id="to-top-button" onclick="goToTop()" title="Go To Top"
+        class="hidden fixed z-50 bottom-10 right-10 p-4 border-0 w-14 h-14 rounded-full shadow-md bg-green-400 hover:bg-green-500 text-white text-lg font-semibold transition-colors duration-300">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+            <path d="M12 4l8 8h-6v8h-4v-8H4l8-8z" />
+        </svg>
+        <span class="sr-only">Go to top</span>
+    </button>
+
+    <script>
+
+        console.log("hello world");
+        // Get the 'to top' button element by ID
+        var toTopButton = document.getElementById("to-top-button");
+
+        // Check if the button exists
+        if (toTopButton) {
+
+            // On scroll event, toggle button visibility based on scroll position
+            window.onscroll = function () {
+                if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
+                    toTopButton.classList.remove("hidden");
+                } else {
+                    toTopButton.classList.add("hidden");
+                }
+            };
+
+            // Function to scroll to the top of the page smoothly
+            window.goToTop = function () {
+                window.scrollTo({
+                    top: 0,
+                    behavior: 'smooth'
+                });
+            };
+        }
+    </script>
+    <script>
+        // Burger menus
+        document.addEventListener('DOMContentLoaded', function () {
+            // open
+            const burger = document.querySelectorAll('.navbar-burger');
+            const menu = document.querySelectorAll('.navbar-menu');
+
+            if (burger.length && menu.length) {
+                for (var i = 0; i < burger.length; i++) {
+                    burger[i].addEventListener('click', function () {
+                        for (var j = 0; j < menu.length; j++) {
+                            menu[j].classList.toggle('hidden');
+                        }
+                    });
+                }
+            }
+
+            // close
+            const close = document.querySelectorAll('.navbar-close');
+            const backdrop = document.querySelectorAll('.navbar-backdrop');
+
+            if (close.length) {
+                for (var i = 0; i < close.length; i++) {
+                    close[i].addEventListener('click', function () {
+                        for (var j = 0; j < menu.length; j++) {
+                            menu[j].classList.toggle('hidden');
+                        }
+                    });
+                }
+            }
+
+            if (backdrop.length) {
+                for (var i = 0; i < backdrop.length; i++) {
+                    backdrop[i].addEventListener('click', function () {
+                        for (var j = 0; j < menu.length; j++) {
+                            menu[j].classList.toggle('hidden');
+                        }
+                    });
+                }
+            }
+        });
+    </script>
+    <script>
+        $(window).on('load', function () {
+            $('#loading').hide();
+        }) 
+    </script>
+
+</body>
+
+</html>
